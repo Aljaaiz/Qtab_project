@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="main.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="app">
+      <div class="appoverlay"></div>
+      <div class="tDiv overlay">
+        <h1>
+          <span id="hour">12</span>
+          :
+          <span class="minute">00</span>
+        </h1>
+        <span id="amPm">am</span>
+        <div class="dateDiv">
+          <p id="date">19 Nov 2019</p>
+        </div>
+      </div>
+
+      <div class="qhDiv ">
+        <div class="header">
+          <div class="btn minimise">minimise</div>
+          <div class="btn close">close</div>
+        </div>
+
+        <div class="qdiv">
+          <!-- <h1>Quran</h1> -->
+          <p id="qtext">
+            تِلْكَ آيَاتُ اللَّهِ نَتْلُوهَا عَلَيْكَ بِالْحَقِّ ۖ فَبِأَيِّ
+            حَدِيثٍ بَعْدَ اللَّهِ وَآيَاتِهِ يُؤْمِنُونَ
+          </p>
+          <p id="q-meaning">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Reprehenderit commodi adipisci, laudantium rem similique tenetur,
+            quibusdam deleniti harum, ipsa eos consequuntur dolores? Pariatur
+            nihil soluta repellendus doloremque, magnam facilis laborum!
+          </p>
+        </div>
+        <!-- <div class="hdiv">
+          <h1>Hadith</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore,
+            quae deserunt doloremque maiores tempora iusto sunt! Accusantium est
+            consequuntur accusamus aliquid ullam necessitatibus, nobis veniam
+            eius. Quia, eveniet eum. Molestiae.
+          </p>
+        </div> -->
+      </div>
+      <div class="weatherDiv overlay">
+        <span id="w-icon">Icon</span>
+        <span id="w-loc">Location</span>
+        <div><span>Loc Icon</span><input type="text" id="searchWeather"></div>
+        
+      </div>
+      <div id="hijraCalender_div" class="overlay">
+        <p id="hijri_date">Rabiul Awwal 1442</p>
+      </div>
+      <div id="additional_contentDiv">
+        <ul>
+          <li class="morning_dua extra-content">
+            <a href="#">Morning and Evening Dua</a>
+            <div class="content_box box1">
+              <p>
+                <h3>For Morning & Evening Dua to be recited in the morning</h3>
+                <p class="arb">
+                أَصْبَـحْـنا وَأَصْبَـحْ المُـلكُ للَّهِ رَبِّ العـالَمـين ،
+                اللّهُـمَّ إِنِّـي أسْـأَلُـكَ خَـيْرَ هـذا الـيَوْم ، فَـتْحَهُ
+                ، وَنَصْـرَهُ ، وَنـورَهُ وَبَـرَكَتَـهُ ، وَهُـداهُ ، وَأَعـوذُ
+                بِـكَ مِـنْ شَـرِّ ما فـيهِ وَشَـرِّ ما بَعْـدَه 
+                </p>
+                <p class="meaning">
+                  The morning has
+                come to me and the whole universe belongs to Allah, the Lord of
+                the worlds, O Allah, I ask of you the good of the day, it's
+                success and aid and it's nur (celestial light) and barakaat
+                (blessings) and seek hidayah (guidance) and seek refuge from the
+                evil in it (this day) and from the evil of that which is to come
+                later. (Hisn from Abu Dawood) Alternatively, recite this dua
+                </p>
+                <p class="arb">
+                اللّهُـمَّ بِكَ أَصْـبَحْنا وَبِكَ أَمْسَـينا ، وَبِكَ نَحْـيا
+                وَبِكَ نَمُـوتُ وَإِلَـيْكَ المَصِيْر 
+                </p>
+                <p class="meaning">
+                O Allah we enter the day
+                time and the evening and die with your Qudrat (power) and to You
+                do we return. (Tirmidhi) When the sun rises 
+              </p>
+
+              <p class="arb">
+                 الْحَمْدُ
+           لِلَّهِ الَّذِي أَقَالَنَا يَوْمَنَا هَذَا وَلَمْ يُهْلِكْنَا  بِذُنُوبِنَا<br>
+                 )(مُسْلِمْ
+                </p>
+
+            <p class="meaning">
+                All praise be to Allah who has forgiven
+                us today and not destroyed us due to our sin. (Muslim) 
+                
+                </p>
+                <h3>In the
+                evening recite</h3> 
+                <p class="arb">
+                أَمْسَيْنَا وَأَمْسَى الْمُلْكُ لِلَّهِ رَبِّ
+                الْعَالَمِينَ اللَّهُمَّ إِنِّي أَسْأَلُكَ خَيْرَ هَذِهِ
+                اللَّيْلَةَ فَتْحَهَا وَنَصْرَهَا وَنُورَهَا وَبَرَكَتَهَا
+                وَهُدَاهَا وَأَعُوذُ بِكَ مِنْ شَرِّ مَا فِيهَا وَشَرِّ مَا
+                بَعْدَهَا 
+                </p>
+                <p class="meaning">
+                The evening has come to me and the whole universe
+                belongs to Allah who is The Lord of the worlds. O Allah, I ask
+                of you the good of the night, it's success and aid and its nur
+                (celestial light) and barakaat (blessings) and seek hidayat
+                (guidance) and refuge from the evil of this night and the evil
+                that is to come later. (Abu Dawood) </p>
+                
+                
+                Alternatively recite this
+                <p class="arb">
+                اللَّهُمَّ بِكَ أَمْسَيْنَا وَبِكَ أَصْبَحْنَا وَبِكَ نَحْيَا
+                وَبِكَ نَمُوتُ وَإِلَيْكَ النُّشُورُ 
+                </p>
+                <p class="meaning">
+                O Allah we enter the night
+                and the day and live and die with Your Qudrat (strength) and to
+                You do we return. (Tirmidhi) After the expiry of Maghrib time,
+                recite this dua
+                </p>
+
+                <p class="arb">
+                اللَّهُمَّ إِنَّ هَذَا إِقْبَالُ لَيْلِكَ
+                وَإِدْبَارُ نَهَارِكَ وَأَصْوَاتُ دُعَاتِكَ فَاغْفِرْ لِي 
+                </p>
+
+                <p class="meaning">
+                O Allah, this is the time of the coming of the night and the
+                passing of the day and the voices of those calling You to
+                forgive us. (Miskhaat) Other supplications to be recited in the
+                morning & evenings Uthman (R.A.) reported that Prophet Mohammad
+                (S.A.W.) has said that (nothing will harm) the servant who
+                recites these words three times every morning and evening.
+
+                </p>
+                بِسْمِ اللَّهِ الَّذِي لَا يَضُرُّ مَعَ اسْمِهِ شَيْءٌ فِي
+                الْأَرْضِ وَلَا فِي السَّمَاءِ وَهُوَ السَّمِيعُ الْعَلِيمُ We
+                have made (started) the morning (and night) in whose Name
+                nothing in the skies and the earth can harm and He is the
+                All-hearing, the All-knowing. (Tirmidhi) It is narrated by Abu
+                Dawood that if one recites this dua in the morning, no
+                unforeseen calamity will come to him. (Miskhat) Prophet Mohammad
+                (S.A.W.) said that if a person recites three ayats of Surah Rum
+                (Para 21) and if he misses his normal recitation of the day, he
+                will still be rewarded for it. This applies to the night as
+                well. فَسُبْحَانَ اللَّهِ حِينَ تُمْسُونَ وَحِينَ تُصْبِحُونَ *
+                وَلَهُ الْحَمْدُ فِي السَّمَاوَاتِ وَالْأَرْضِ وَعَشِيًّا
+                وَحِينَ تُظْهِرُونَ * يُخْرِجُ الْحَيَّ مِنَ الْمَيِّتِ
+                وَيُخْرِجُ الْمَيِّتَ مِنَ الْحَيِّ وَيُحْيِي الْأَرْضَ بَعْدَ
+                مَوْتِهَا وَكَذَلِكَ تُخْرَجُونَ "So remember Allah in the
+                evening and the morning. To him is the praise in the Heavens and
+                the Earth and in the last hours and when it is noon. He brings
+                forth the living from the dead and the dead from the living and
+                He revives the earth after it is dead. And even so you shall be
+                brought forth". Abu Huraira (R.A) narrated that Prophet Mohammad
+                (S.A.W.) said that whosoever reads the beginning of Surah Mo'min
+                (para 24) and Ayatul-Qursi in the morning, then he will be
+                protected from calamaties and ploys till the evening and
+                whosoever recites these in the evenings, will be protected from
+                calamities and ploys till the morning. حم * تَنزِيلُ الْكِتَابِ
+                مِنَ اللَّهِ الْعَزِيزِ الْعَلِيمِ * غَافِرِ الذَّنبِ وَقَابِلِ
+                التَّوْبِ شَدِيدِ الْعِقَابِ ذِي الطَّوْلِ لَا إِلَهَ إِلَّا
+                هُوَ إِلَيْهِ الْمَصِيرُ "Ha. Meem, The sending down of this
+                book is from Allah who is the All-Mighty, the All-Knowing, The
+                Forgiver of sins and the Acceptor of repentance, Severe in
+                retribution, Bountiful there is no ilah but He, Unto Him is our
+                return". اللَّهُ لاَ إِلَـهَ إِلاَّ هُوَ الْحَيُّ الْقَيُّومُ
+                لاَ تَأْخُذُهُ سِنَةٌ وَلاَ نَوْمٌ لَّهُ مَا فِي السَّمَاوَاتِ
+                وَمَا فِي الْأَرْضِ مَن ذَا الَّذِي يَشْفَعُ عِندَهُ إِلاَّ
+                بِإِذْنِهِ يَعْلَمُ مَا بَيْنَ أَيْدِيهِمْ وَمَا خَلْفَهُمْ
+                وَلاَ يُحِيطُونَ بِشَيْءٍ مِّنْ عِلْمِهِ إِلاَّ بِمَا شَاءَ
+                وَسِعَ كُرْسِيُّهُ السَّمَاوَاتِ وَالْأَرْضَ وَلاَ يَئُودُهُ
+                حِفْظُهُمَا وَهُوَ الْعَلِيُّ الْعَظِيمُ Allah! There is no ilah
+                (deity worthy of worship) but He The Living, The Eternal One.
+                Neither slumber, nor sleep overtakes Him. To Him belonges
+                whatever is in the Heavens and on the earth. Who is he that can
+                intercede with Him but by His permission? He knows what is
+                before and what is behind them. They encompass nothing of His
+                knowledge which He will. His Throne extends over the Heavens and
+                the Earth, and the preservation of both does not weary Him. He
+                is the Exalted The Immense One. (Qur'an 2:255) Prophet Mohammad
+                (S.A.W.) stated that a person who has recited (the underlying)
+                in the morning, he has pleased (praised, glorified) Allah for
+                His favours of the morning, and if he has done so in the night,
+                he has thanked Allah for His favours of the night. (Abu Dawood,
+                Nisai) اللَّهُمَّ مَا أَصْبَحَ بِي مِنْ نِعْمَةٍ أَوْ بِأَحَدٍ
+                مِنْ خَلْقِكَ فَمِنْكَ وَحْدَكَ لَا شَرِيكَ لَكَ فَلَكَ
+                الْحَمْدُ وَلَكَ الشُّكْرُ Translation: "O Allah, whatever
+                favours You have bestowed upon me and all other creations is
+                only from you. You are One, You have no partners. Praise and
+                Shukr (thanks) be to You". If recited in the night, then recite
+                مَا أمَْسيَ in place of مَا أَصْبَحَ بِي Thuban (R.A.) narrated
+                that Prophet Mohammad (SAW) stated that if a Muslim servant
+                recites (the underlying) three times every morning, then it
+                becomes the responsibility of Allah to satisfy him on the Day of
+                Qiyamah. رَضِيتُ بِاللَّهِ رَبَّاً وَبِالْإِسْلَامِ دِينَاً
+                وَبِمُحَمَّدٍ نَبِيَّاً Translation: I am pleased with Allah as
+                my Lord, Islam as my Deen and Muhammad (SAW) as my Nabi.
+                (Tirmidhi) Muagal bin Yasaar (R.A.) narrates that Prophet
+                Mohammad (S.A.W.) has stated that a person who recites three
+                times أَعُوذُ بِاللَّهِ السَّمِيعِ الْعَلِيمِ مِنَ الشَّيْطَانِ
+                الرَّجِيمِ in the morning the last three ayats of Suratul Hashr
+                then Allah delegates 70,000 angles to send mercy onto him till
+                the evening and if he dies that day, he will die as a martyr and
+                if he recites these in the evening then Allah delegates 70,000
+                angels to send mercy onto him till the morning and if he dies
+                that night, he dies as martyr. (Tirmidhi) هُوَ اللَّهُ الَّذِي
+                لاَ إِلَهَ إِلاَّ هُوَ عَالِمُ الْغَيْبِ وَالشَّهَادَةِ هُوَ
+                الرَّحْمَنُ الرَّحِيمُ * هُوَ اللَّهُ الَّذِي لاَ إِلَهَ إِلاَّ
+                هُوَ الْمَلِكُ الْقُدُّوسُ السَّلامُ الْمُؤْمِنُ الْمُهَيْمِنُ
+                الْعَزِيزُ الْجَبَّارُ الْمُتَكَبِّرُ سُبْحَانَ اللَّهِ عَمَّا
+                يُشْرِكُونَ * هُوَ اللَّهُ الْخَالِقُ الْبَارِئُ الْمُصَوِّرُ
+                لَهُ الْأَسْمَاءُ الْحُسْنَى يُسَبِّحُ لَهُ مَا فِي
+                السَّمَاوَاتِ وَالْأَرْضِ وَهُوَ الْعَزِيزُ الْحَكِيمُ * "He is
+                Allah, there is no ilah but He, He is the knower of the unseen
+                and the witness He is the All-Merciful, the All compassionate.
+                He is Allah, there is no ilah but He. He is the king, the Holy,
+                the Giver of Safety. The Taker-in shelter the All-Mighty, the
+                omnipotent, the All-Sublime. Allah is Pure and Pure of what they
+                associate (with Him). He is Allah, the Creator, the One who is
+                Perfect. To Him belong names Most Excellent. All that is in the
+                heavens and the earth, glorify Him and He is the All-Mighty, the
+                All-Wise". Ataa bin Abi Rahaa (R.A.) narrates that Prophet
+                Mohammad (S.A.W.) has stated that if a person recites Surah
+                Yaseen early in the morning then his need for the day will be
+                fullfilled. (Mishkat) Benefit: The recitation of Surah Ikhlaas,
+                Surah Falaq and Surah Naas three times each in the mornings and
+                evenings, has been encouraged in the Ahadith. (Hisn-ulHasin)
+                Supplications to be recited at night Abdullah bin Masood (R.A.)
+                states that Prophet Mohammad (S.A.W.) has said that the person
+                who recites Suratul Waqia (para 27) every night, will never be
+                poverty stricken (hungry) (Baihagi in Shabatul Iman) Uthman
+                (R.A.) states that a person who recites from إِنَّ فِي خَلْقِ
+                السَّمَاوَاتِ وَالْأَرْضِ in Surah Al-Imran till the end of the
+                Surah on any night or part of the night, will receive the reward
+                of performing his Salaat for the whole night. (Mishkat) Jabir
+                (R.A.) states that Prophet Mohammad (S.A.W.) never slept before
+                reciting Surah Alif Laam Meem Sajda (21 para) and Surah
+                Tabarakal Lazi. (Mishkat) Abdullah bin Masood (R.A.) narrates
+                that Prophet Mohammad (S.A.W.) has stated that the person who
+                recites the last two ayats of Suratul Baqarah till the end, then
+                these two ayats will be sufficient for him, i.e. Allah will
+                protect him from all evil and ploys. (Bukhari, Muslim) When
+                retiring to sleep, make wudhu, dust off the bed three times, lie
+                on the right side, place the right hand under the head or cheeks
+                and recite the following dua three times. (Mishkat and Hsinul
+                Hasin, Bukhari Muslim) اللَّهُمَّ قِنِي عَذَابَكَ يَوْمَ
+                تَجْمَعُ عِبَادَكَ "O Allah, save me from the punishment on the
+                Day when You will gather Your servants". Alternatively recite
+                this dua بِاسْمِكَ رَبِّي وَضَعْتُ جَنْبِي وَبِكَ أَرْفَعُهُ
+                إِنْ أَمْسَكْتَ نَفْسِي فَارْحَمْهَا وَإِنْ أَرْسَلْتَهَا
+                فَاحْفَظْهَا بِمَا تَحْفَظُ بِهِ عِبَادَكَ الصَّالِحِينَ "Oh my
+                Lord, I have taken Your name and placed myself on my side and by
+                Your power will rise up again. If you take my soul whilst I am
+                sleeping (grant me death) then have mercy on my soul and if you
+                leave me (let me live) by your power protect me by that with
+                which you have protected your righteous servants". (Bukhari,
+                Muslim) Or recite this dua اللَّهُمَّ بِاسْمِكَ أَمُوتُ
+                وَأَحْيَا "O Allah, by Your name I live and die". (Bukhari,
+                Muslim) Or recite this dua اللَّهُمَّ أَسْلَمْتُ نَفْسِي
+                إِلَيْكَ وَوَجَّهْتُ وَجْهِي إِلَيْكَ وَفَوَّضْتُ أَمْرِي
+                إِلَيْكَ وَأَلْجَأْتُ ظَهْرِي إِلَيْكَ رَغْبَةً وَرَهْبَةً
+                إِلَيْكَ لَا مَلْجَأَ وَلَا مَنْجَا مِنْكَ إِلَّا إِلَيْكَ
+                آمَنْتُ بِكِتَابِكَ الَّذِي أَنْزَلْتَ وَنَبِيِّكَ الَّذِي
+                أَرْسَلْتَ "I submit my life to you, I turn towards You and
+                leave my work unto you, I lean on you, desire your boons and
+                fear you as there is no other salvation besides you. I believe
+                in the kitab (Book) you have revealed and in the Rasul(Prophet)
+                you have sent. Prophet Mohammad (S.A.W.) showed (taught a
+                Sahabi) this dua and said: "If after reading it you die in the
+                night, then it is as if you have died on 'Natural Deen' and if
+                you awake in the morning alive then you will have good fortune".
+                (Mishkat) Anas (R.A.) narrates that Prophet Mohammad (S.A.W.)
+                said that if a person retires to bed on the side and recites
+                Surah Fathiha and Surah Ikhlaas (Qul huwa- Allaho Ahad) he is
+                immune from everything besides death. (Hisnul Hasan from Albazr)
+                Sahabi (R.A.) requested Prophet Mohammad (S.A.W.) that Prophet
+                Mohammad (S.A.W.) teach him something to recite at the time of
+                retiring to bed. Prophet Mohammad (S.A.W.) said: "Recite Qul Ya
+                Ayuhal Kafiroon, for in it (there is an announcement) to refrain
+                from shirk. (Mishkat from Tirmidhi) In some ahadith it is stated
+                that one should sleep after reciting (i.e. not to talk after
+                reciting it). (Hisnul Hasin from Albazr) Ayesha (R.A.) narrates
+                that when Prophet Mohammad (S.A.W.) used to go to the room for
+                sleep, he used to recite Suras Ikhlaas, Falaq, Nass and blow
+                onto his hand (palms) in such a manner that the saliva would
+                drop on them and then he would rub them over his body three
+                times starting from the front of the face. (Bukhari, Muslim)
+                Beside this he would recite 33 times سُبْحَانَ اللَّهِ 33 times
+                الْحَمْدُ لِلَّهِ 34 times اللَّهُ أَكْبَرُ (Mishkat) He also
+                used to recite Ayatul Qursi as Allah has stipulated that the
+                reciter will be protected throughout the night by the angels and
+                the Satan will not come near. (Bukhari) Also recite this dua
+                three times أَسْتَغْفِرُ اللَّهَ الَّذِي لَا إِلَهَ إِلَّا هُوَ
+                الْحَيَّ الْقَيُّومَ وَأَتُوبِ إِلَيْهِ Its virtues are that all
+                the reciter's sins will be forgiven even if it be equal to the
+                extent of the foam in the ocean. (Tirmidhi) Recite Bismillah
+                while closing doors, covering utensils, and putting off the
+                light (candles etc.) (Mishkat) Prophet Mohammad (S.A.W.) said
+                that when a person enters his bed (to sleep), an angel and a
+                Shaitaan surround him. The Shaitaan whispers 'your awakening
+                will end in evil' and the angel says' end in good". One sleeps
+                after engaging in dhikr, the angels will protect him throughout
+                the night. In order to gain the protection of the angels, it is
+                wise to engage in Dhikr and then sleep. (Hisnul Hasin)
+              </p>
+            </div>
+          </li>
+          <li class="zakat-calc extra-content">
+            <a href="#">Zakat Calc</a>
+            <div class="content_box box2">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio
+                recusandae nisi nostrum provident quas ea cumque eius veritatis
+                dignissimos ut. Vitae deserunt facilis officiis pariatur totam
+                quo, error fugit nobis!
+              </p>
+            </div>
+          </li>
+          <li class="AllahNames extra-content">
+            <a href="#">Names of Allah</a>
+            <div class="content_box box3">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio
+                recusandae nisi nostrum provident quas ea cumque eius veritatis
+                dignissimos ut. Vitae deserunt facilis officiis pariatur totam
+                quo, error fugit nobis!
+              </p>
+            </div>
+          </li>
+          <li class="hajj_umrah extra-content">
+            <a href="#">Hajj and Umrah Guide</a>
+            <div class="content_box box4 ">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio
+                recusandae nisi nostrum provident quas ea cumque eius veritatis
+                dignissimos ut. Vitae deserunt facilis officiis pariatur totam
+                quo, error fugit nobis!
+              </p>
+            </div>
+          </li>
+          <li class="halal_res extra-content">
+            <a href="#">Halal Restaurant</a>
+            <div class="content_box box5">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio
+                recusandae nisi nostrum provident quas ea cumque eius veritatis
+                dignissimos ut. Vitae deserunt facilis officiis pariatur totam
+                quo, error fugit nobis!
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div id="prayerDiv" class="active">
+        <div id="contol-div">
+          <div class="close">close</div>
+          <div class="minimise">Mini</div>
+        </div>
+        <ul>
+          <li class="prayer_list_item">
+            <span class="prayer_name">
+              Fajri
+            </span>
+            <span class="prayer_time">
+              5:30am
+            </span>
+          </li>
+          <li class="prayer_list_item">Prayer Time</li>
+          <li class="prayer_list_item">Prayer Time</li>
+          <li class="prayer_list_item">Prayer Time</li>
+          <li class="prayer_list_item">Prayer Time</li>
+          <li class="prayer_list_item">Prayer Time</li>
+        </ul>
+      </div>
+      <select id="chapter">
+        <!-- <option id="chapter_value">select chapter </option> -->
+      </select>
+      <select id="verse">
+        <option>select verse </option>
+      </select>
+      <div class="result"></div>
+    </div>
+    <script src="API.js"></script>
+    <script src="UI.js"></script>
+    <script src="Storage.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
