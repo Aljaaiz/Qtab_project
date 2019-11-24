@@ -38,11 +38,11 @@ class UI {
   }
 
   paint(data) {
-    let output = "";
+    let output = `<option value="0">select surah</option>`;
     data.forEach(data => {
-      output += data.name_simple;
+      output += `<option value="${data.id}">${data.name_simple}</option>`;
     });
-    // this.chapter_id.textContent = `<option> ${output}</option>`;
-    console.log(output);
+    this.chapter_id.innerHTML = output;
+    console.log(data);
   }
 }
