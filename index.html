@@ -8,6 +8,7 @@
       href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <link rel="stylesheet" href="main.css" />
     <title>Document</title>
   </head>
@@ -15,10 +16,10 @@
     <div class="app">
       <div class="appoverlay"></div>
       <div class="tDiv overlay">
-        <h1>
-          <span id="hour">12</span>
+        <h1 id="time">
+         12
           :
-          <span id="minute">00</span>
+         00
         </h1>
         <span id="amPm">am</span>
         <div class="dateDiv">
@@ -28,8 +29,8 @@
 
       <div class="qhDiv ">
         <div class="header">
-          <div class="btn minimise">minimise</div>
-          <div class="btn close">close</div>
+          <div class="btn minimise"><ion-icon name="remove"></ion-icon></div>
+          <div class="btn close"><ion-icon name="close"></ion-icon></div>
         </div>
 
         <div class="qdiv">
@@ -55,10 +56,22 @@
           </p>
         </div> -->
       </div>
-      <div class="weatherDiv overlay">
-        <span id="w-icon">Icon</span>
-        <span id="w-loc">Location</span>
-        <div><span>Loc Icon</span><input type="text" id="searchWeather"></div>
+      <div class="weatherDiv">
+       
+       <span id="w-image"></span>
+        <div id="weatherInfo">
+            <span id="w-loc">Location</span>
+            <span id="w-temp">Location</span>
+          </div>
+     
+     
+        <!-- <span id="w-icon">Icon</span> -->
+       
+        <div id="inputIcon">
+          <input type="text" id="searchWeather"/>
+          <div id="loc_icon"><ion-icon name="pin"></ion-icon>
+          </div>
+        </div>
         
       </div>
       <div id="hijraCalender_div" class="overlay">
@@ -372,23 +385,59 @@
       </div>
       <div id="prayerDiv" class="active">
         <div id="contol-div">
-          <div class="close">close</div>
-          <div class="minimise">Mini</div>
+          <div class="close"><ion-icon name="close"></ion-icon></div>
+          <div class="minimise"><ion-icon name="remove"></ion-icon></div>
         </div>
         <ul>
           <li class="prayer_list_item">
             <span class="prayer_name">
-              Fajri
+              Fajr
             </span>
-            <span class="prayer_time">
+            <span class="prayer_time" id="fajr">
               5:30am
             </span>
           </li>
-          <li class="prayer_list_item">Prayer Time</li>
-          <li class="prayer_list_item">Prayer Time</li>
-          <li class="prayer_list_item">Prayer Time</li>
-          <li class="prayer_list_item">Prayer Time</li>
-          <li class="prayer_list_item">Prayer Time</li>
+          <!-- <li class="prayer_list_item" id="fajr">Prayer Time</li> -->
+          <li class="prayer_list_item" >
+              <span class="prayer_name">
+                  Sunrise
+                </span>
+                <span class="prayer_time" id="sunrise">
+                  5:30am
+                </span>
+          </li>
+          <li class="prayer_list_item">
+              <span class="prayer_name">
+                  Zuhr
+                </span>
+                <span class="prayer_time" id="zuhr">
+                  5:30am
+                </span>
+          </li>
+          <li class="prayer_list_item">
+              <span class="prayer_name">
+                 Asr
+                </span>
+                <span class="prayer_time"  id="asr">
+                  5:30am
+                </span>
+          </li>
+          <li class="prayer_list_item" >
+              <span class="prayer_name">
+                  Maghrib
+                 </span>
+                 <span class="prayer_time" id="magrib">
+                   5:30am
+                 </span>
+          </li>
+          <li class="prayer_list_item" >
+              <span class="prayer_name">
+                  Ishai
+                 </span>
+                 <span class="prayer_time" id="ishai">
+                   5:30am
+                 </span>
+          </li>
         </ul>
       </div>
       <select id="chapter">
@@ -399,6 +448,7 @@
       </select>
       <div class="result"></div>
     </div>
+    <script  src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"></script> 
     <script src="API.js"></script>
     <script src="UI.js"></script>
     <script src="Storage.js"></script>

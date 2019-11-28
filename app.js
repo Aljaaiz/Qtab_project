@@ -1,16 +1,33 @@
 //Instantiate UI class
 const ui = new UI();
 //Instantiate API class
-const quran = new Quran();
+const api = new API();
 
 ui.displayExtraLisContent();
 //function to close Element
 ui.closeElement();
 //function to clse minimise
 ui.miniseElement();
+//function to expand search icon
+ui.expandSearhInput();
 
-quran.getQuran().then(data => {
+api.getQuran().then(data => {
   ui.paint(data);
+});
+
+api.getPrayerTime().then(data => {
+  console.log(data);
+  ui.paintSolatTime({ data });
+
+  // const {
+  //   timings,
+  //   date: {
+  //     hijri,
+  //     hijri: { weekday }
+  //   }
+  // } = data.data;
+  // console.log(data);
+  // console.log(weekday);
 });
 
 //clock
@@ -28,19 +45,19 @@ function getTime() {
 
   let amPm = hrNow >= 12 ? "pm" : "am";
 
-  hrNow < 10 ? "0" + hrNow : "";
-  mNow < 10 ? "0" + mNow : "";
+  //AdZero Function
+  function addZero(n) {
+    return (parseInt(n, 10) < 10 ? "0" : "") + n;
+  }
 
   //getting 12hrs time format
   hrNow = hrNow % 12 || 12;
   // console.log(hrNow, mNow, secNow);
 
-  let hour = document.getElementById("hour");
-  let minutes = document.getElementById("minute");
+  let time = document.getElementById("time");
   let am = document.getElementById("amPm");
 
-  hour.textContent = hrNow;
-  minutes.textContent = mNow;
+  time.innerHTML = `<span>${hrNow}</span> : ${addZero(mNow)}`;
   am.textContent = amPm;
 
   //SET FULL DATE AND MONTH
@@ -58,6 +75,7 @@ function getTime() {
     "Nov",
     "Dec"
   ];
+  //SET WEEK
   const weekDays = ["Sun ", "Mon ", "Tue ", "Wed ", "Thur ", "Fri ", "Sa "];
 
   let day = document.getElementById("day"),
@@ -75,3 +93,17 @@ function getTime() {
   setTimeout(getTime, 1000);
 }
 getTime();
+
+//Get Weather
+const search = document.getElementById("searchWeather");
+
+// search.addEventListener("blur", () => {
+const searchText = "dubai";
+console.log(searchText);
+
+// if (searchText !== "") {
+api.getPrayerTime().then(data => {
+  ui.paintWeather(data);
+});
+// }
+// });

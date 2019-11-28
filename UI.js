@@ -5,6 +5,16 @@ class UI {
     this.minimise = document.querySelectorAll(".minimise");
     this.chapter_id = document.getElementById("chapter");
     this.verse_id = document.getElementById("verse");
+    this.loc_icon = document.getElementById("loc_icon");
+    this.fajr = document.getElementById("fajr");
+    this.sunrise = document.getElementById("sunrise");
+    this.zuhr = document.getElementById("zuhr");
+    this.asr = document.getElementById("asr");
+    this.magrib = document.getElementById("magrib");
+    this.ishai = document.getElementById("ishai");
+    this.location = document.getElementById("w-loc");
+    this.temperature = document.getElementById("w-temp");
+    this.w_icon = document.getElementById("w-icon");
   }
 
   displayExtraLisContent() {
@@ -22,7 +32,8 @@ class UI {
     this.close.forEach(close => {
       close.addEventListener("click", e => {
         console.log(
-          (e.target.parentElement.parentElement.style.display = "none")
+          (e.target.parentElement.parentElement.parentElement.style.display =
+            "none")
         );
       });
     });
@@ -31,9 +42,19 @@ class UI {
   miniseElement() {
     this.minimise.forEach(minimise => {
       minimise.addEventListener("click", e => {
-        if (e.target.parentElement.parentElement.classList.toggle("active")) {
+        if (
+          e.target.parentElement.parentElement.parentElement.classList.toggle(
+            "active"
+          )
+        ) {
         }
       });
+    });
+  }
+
+  expandSearhInput() {
+    this.loc_icon.addEventListener("click", function() {
+      document.getElementById("searchWeather").classList.toggle("active");
     });
   }
 
@@ -44,5 +65,40 @@ class UI {
     });
     this.chapter_id.innerHTML = output;
     console.log(data);
+  }
+
+  //Solat into the UI
+  paintSolatTime(data) {
+    const {
+      timings,
+      date: { hijri }
+    } = data;
+
+    console.log(hijri, timings);
+    this.fajr.innerHTML = timings.Fajr + " am";
+    this.sunrise.innerHTML = timings.Sunrise + " am";
+    this.zuhr.innerHTML = timings.Dhuhr + " pm";
+    this.asr.innerHTML = timings.Asr + " pm";
+    this.magrib.innerHTML = timings.Maghrib + " am";
+    this.ishai.innerHTML = timings.Isha + " am";
+  }
+
+  paintWeather(data) {
+    console.log(data);
+    const {
+      main: { temp },
+      name,
+      sys: { country }
+    } = data;
+    const icon = data.weather[0].icon;
+    let roundTemp = temp.toFixed();
+    this.temperature.innerHTML = `${roundTemp} &#176;C"`;
+    this.location.innerHTML = name;
+    this.w_icon.setAttribute(
+      "src",
+      `http://openweathermap.org/img/w/${icon}.png `
+    );
+
+    console.log(temp.toFixed(), name, icon);
   }
 }
