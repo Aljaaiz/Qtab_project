@@ -25,25 +25,26 @@ class API {
       `http://api.aladhan.com/v1/timingsByCity?city=${ipResponse.city}&country=${ipResponse.country_name}&method=3`
     );
     const prayerData = await response.json();
+    // console.log(prayerData.data);
 
     //Get Weather
     const responseWeather = await fetch(
       `http://api.openweathermap.org/data/2.5/weather?q=${ipResponse.city}&appid=${this.weather_key}&units=metric`
     );
     const weatherRes = await responseWeather.json();
-    console.log(weatherRes);
+    // console.log(weatherRes);
 
-    return prayerData.data, weatherRes;
+    return { prayerData, weatherRes };
   }
 
-  //Function to fecth Weather
-  async searchWeather(city) {
-    const response = await fetch(
-      `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${this.weather_key}&units=metric`
-    );
-    const weatherRes = await response.json();
-    console.log(weatherRes);
+  //   //Function to fecth Weather
+  //   async searchWeather(city) {
+  //     const response = await fetch(
+  //       `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${this.weather_key}&units=metric`
+  //     );
+  //     const weatherRes = await response.json();
+  //     console.log(weatherRes);
 
-    return weatherRes.data, resData;
-  }
+  //     return weatherRes.data, resData;
+  //   }
 }

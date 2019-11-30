@@ -364,3 +364,29 @@ li .morning_dua {
   display: inline-block;
   vertical-align: top;
 }
+#names_div {
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: minmax(100px, auto);
+  grid-gap: 1rem;
+}
+#names_div h3 {
+  font-size: 2.5rem;
+  font-family: Scheherazade, serif;
+}
+#names_div h4 {
+  text-align: start;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 5px;
+}
+#names_div p {
+  text-align: start;
+  margin: 5px 0;
+}
+#names_div footer {
+  text-align: start;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}

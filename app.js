@@ -9,25 +9,17 @@ ui.closeElement();
 //function to clse minimise
 ui.miniseElement();
 //function to expand search icon
-ui.expandSearhInput();
+// ui.expandSearhInput();
 
 api.getQuran().then(data => {
   ui.paint(data);
 });
 
 api.getPrayerTime().then(data => {
-  console.log(data);
-  ui.paintSolatTime({ data });
-
-  // const {
-  //   timings,
-  //   date: {
-  //     hijri,
-  //     hijri: { weekday }
-  //   }
-  // } = data.data;
-  // console.log(data);
-  // console.log(weekday);
+  console.log(data.prayerData);
+  // console.log(data.weatherRes);
+  ui.paintSolatTime(data.prayerData);
+  ui.paintWeather(data.weatherRes);
 });
 
 //clock
@@ -39,6 +31,7 @@ function getTime() {
   let month = today.getMonth();
   let todayDate = today.getDate();
   let yr = today.getFullYear();
+
   let wkday = document.getElementById("week");
 
   // console.log(todayDate, month, yr);
@@ -94,16 +87,19 @@ function getTime() {
 }
 getTime();
 
-//Get Weather
-const search = document.getElementById("searchWeather");
+const audio = new Audio("Adhan.mp3");
 
-// search.addEventListener("blur", () => {
-const searchText = "dubai";
-console.log(searchText);
-
-// if (searchText !== "") {
-api.getPrayerTime().then(data => {
-  ui.paintWeather(data);
-});
-// }
-// });
+function updateFunc() {
+  let today = new Date();
+  let hour = today.getHours();
+  let minute = today.getMinutes();
+  if (hour - 12 == 9 && audio.paused) {
+    audio.play();
+    console.log(hour);
+  }
+  console.log(hour);
+  // setTimeout(() => {
+  //   audio.pause();
+  // }, 200000);
+}
+// setInterval(updateFunc, 1000);

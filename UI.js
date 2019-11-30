@@ -14,7 +14,7 @@ class UI {
     this.ishai = document.getElementById("ishai");
     this.location = document.getElementById("w-loc");
     this.temperature = document.getElementById("w-temp");
-    this.w_icon = document.getElementById("w-icon");
+    this.w_icon = document.getElementById("w-image");
   }
 
   displayExtraLisContent() {
@@ -52,11 +52,11 @@ class UI {
     });
   }
 
-  expandSearhInput() {
-    this.loc_icon.addEventListener("click", function() {
-      document.getElementById("searchWeather").classList.toggle("active");
-    });
-  }
+  // expandSearhInput() {
+  //   this.loc_icon.addEventListener("click", function() {
+  //     document.getElementById("searchWeather").classList.toggle("active");
+  //   });
+  // }
 
   paint(data) {
     let output = `<option value="0">select surah</option>`;
@@ -69,12 +69,14 @@ class UI {
 
   //Solat into the UI
   paintSolatTime(data) {
-    const {
-      timings,
-      date: { hijri }
-    } = data;
+    console.log(data);
 
-    console.log(hijri, timings);
+    const {
+      timings
+      // date: { hijri }
+    } = data.data;
+
+    console.log(timings);
     this.fajr.innerHTML = timings.Fajr + " am";
     this.sunrise.innerHTML = timings.Sunrise + " am";
     this.zuhr.innerHTML = timings.Dhuhr + " pm";
@@ -92,12 +94,9 @@ class UI {
     } = data;
     const icon = data.weather[0].icon;
     let roundTemp = temp.toFixed();
-    this.temperature.innerHTML = `${roundTemp} &#176;C"`;
+    this.temperature.innerHTML = `${roundTemp} &#176;C`;
     this.location.innerHTML = name;
-    this.w_icon.setAttribute(
-      "src",
-      `http://openweathermap.org/img/w/${icon}.png `
-    );
+    this.w_icon.innerHTML = `<img src="http://openweathermap.org/img/w/${icon}.png" >`;
 
     console.log(temp.toFixed(), name, icon);
   }
