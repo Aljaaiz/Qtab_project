@@ -1,52 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-    <link rel="stylesheet" href="main.css" />
-    <title>Document</title>
-  </head>
-  <body>
-    <div class="app">
-      <div class="appoverlay"></div>
-      <div class="tDiv overlay">
-        <h1 id="time">
-         12
-          :
-         00
-        </h1>
-        <span id="amPm">am</span>
-        <div class="dateDiv">
-          <p  class="overlay" id="date"><span id="week">week </span><span id="day">19</span> <span id="monthSpan">Nov</span> <span id="year">2019</span></p>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <link rel="stylesheet" href="main.css" />
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="app">
+    <div class="appoverlay"></div>
+    <div class="tDiv overlay">
+      <h1 id="time">
+        12
+        :
+        00
+      </h1>
+      <span id="amPm">am</span>
+      <div class="dateDiv">
+        <p class="overlay" id="date"><span id="week">week </span><span id="day">19</span> <span
+            id="monthSpan">Nov</span> <span id="year">2019</span></p>
+      </div>
+    </div>
+
+    <div class="qhDiv ">
+      <div class="header">
+        <div class="btn minimise">
+          <ion-icon name="remove"></ion-icon>
+        </div>
+        <div class="btn close">
+          <ion-icon name="close"></ion-icon>
         </div>
       </div>
 
-      <div class="qhDiv ">
-        <div class="header">
-          <div class="btn minimise"><ion-icon name="remove"></ion-icon></div>
-          <div class="btn close"><ion-icon name="close"></ion-icon></div>
-        </div>
-
-        <div class="qdiv">
-          <!-- <h1>Quran</h1> -->
-          <p id="qtext">
-            تِلْكَ آيَاتُ اللَّهِ نَتْلُوهَا عَلَيْكَ بِالْحَقِّ ۖ فَبِأَيِّ
-            حَدِيثٍ بَعْدَ اللَّهِ وَآيَاتِهِ يُؤْمِنُونَ
-          </p>
-          <p id="q-meaning">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Reprehenderit commodi adipisci, laudantium rem similique tenetur,
-            quibusdam deleniti harum, ipsa eos consequuntur dolores? Pariatur
-            nihil soluta repellendus doloremque, magnam facilis laborum!
-          </p>
-        </div>
-        <!-- <div class="hdiv">
+      <div class="qdiv">
+        <!-- <h1>Quran</h1> -->
+        <p id="qtext">
+          تِلْكَ آيَاتُ اللَّهِ نَتْلُوهَا عَلَيْكَ بِالْحَقِّ ۖ فَبِأَيِّ
+          حَدِيثٍ بَعْدَ اللَّهِ وَآيَاتِهِ يُؤْمِنُونَ
+        </p>
+        <p id="q-meaning">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Reprehenderit commodi adipisci, laudantium rem similique tenetur,
+          quibusdam deleniti harum, ipsa eos consequuntur dolores? Pariatur
+          nihil soluta repellendus doloremque, magnam facilis laborum!
+        </p>
+      </div>
+      <!-- <div class="hdiv">
           <h1>Hadith</h1>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore,
@@ -55,107 +59,107 @@
             eius. Quia, eveniet eum. Molestiae.
           </p>
         </div> -->
+    </div>
+    <div class="weatherDiv">
+
+      <span id="w-image"></span>
+      <div id="weatherInfo">
+        <span id="w-loc">Location</span>
+        <span id="w-temp">Location</span>
       </div>
-      <div class="weatherDiv">
-       
-       <span id="w-image"></span>
-        <div id="weatherInfo">
-            <span id="w-loc">Location</span>
-            <span id="w-temp">Location</span>
-          </div>
-     
-     
-        <!-- <span id="w-icon">Icon</span> -->
-       
-        <!-- <div id="inputIcon">
+
+
+      <!-- <span id="w-icon">Icon</span> -->
+
+      <!-- <div id="inputIcon">
           <input type="text" id="searchWeather"/>
           <div id="loc_icon"><ion-icon name="pin"></ion-icon>
           </div>
         </div> -->
-        
-      </div>
-      <div id="hijraCalender_div" class="overlay">
-        <p id="hijri_date">Rabiul Awwal 1442</p>
-      </div>
-      <div id="additional_contentDiv">
-        <ul>
-          <li class="morning_dua extra-content">
-            <a href="#">Morning and Evening Dua</a>
-            <div class="content_box box1">
-              <p>
-                <h3>For Morning & Evening Dua to be recited in the morning</h3>
-                <p class="arb">
+
+    </div>
+    <div id="hijraCalender_div" class="overlay">
+      <p id="hijri_date">Rabiul Awwal 1442</p>
+    </div>
+    <div id="additional_contentDiv">
+      <ul>
+        <li class="morning_dua extra-content">
+          <a href="#">Morning and Evening Dua</a>
+          <div class="content_box box1">
+            <p>
+              <h3>For Morning & Evening Dua to be recited in the morning</h3>
+              <p class="arb">
                 أَصْبَـحْـنا وَأَصْبَـحْ المُـلكُ للَّهِ رَبِّ العـالَمـين ،
                 اللّهُـمَّ إِنِّـي أسْـأَلُـكَ خَـيْرَ هـذا الـيَوْم ، فَـتْحَهُ
                 ، وَنَصْـرَهُ ، وَنـورَهُ وَبَـرَكَتَـهُ ، وَهُـداهُ ، وَأَعـوذُ
-                بِـكَ مِـنْ شَـرِّ ما فـيهِ وَشَـرِّ ما بَعْـدَه 
-                </p>
-                <p class="meaning">
-                  The morning has
+                بِـكَ مِـنْ شَـرِّ ما فـيهِ وَشَـرِّ ما بَعْـدَه
+              </p>
+              <p class="meaning">
+                The morning has
                 come to me and the whole universe belongs to Allah, the Lord of
                 the worlds, O Allah, I ask of you the good of the day, it's
                 success and aid and it's nur (celestial light) and barakaat
                 (blessings) and seek hidayah (guidance) and seek refuge from the
                 evil in it (this day) and from the evil of that which is to come
                 later. (Hisn from Abu Dawood) Alternatively, recite this dua
-                </p>
-                <p class="arb">
+              </p>
+              <p class="arb">
                 اللّهُـمَّ بِكَ أَصْـبَحْنا وَبِكَ أَمْسَـينا ، وَبِكَ نَحْـيا
-                وَبِكَ نَمُـوتُ وَإِلَـيْكَ المَصِيْر 
-                </p>
-                <p class="meaning">
+                وَبِكَ نَمُـوتُ وَإِلَـيْكَ المَصِيْر
+              </p>
+              <p class="meaning">
                 O Allah we enter the day
                 time and the evening and die with your Qudrat (power) and to You
-                do we return. (Tirmidhi) When the sun rises 
+                do we return. (Tirmidhi) When the sun rises
               </p>
 
               <p class="arb">
-                 الْحَمْدُ
-           لِلَّهِ الَّذِي أَقَالَنَا يَوْمَنَا هَذَا وَلَمْ يُهْلِكْنَا  بِذُنُوبِنَا<br>
-                 )(مُسْلِمْ
-                </p>
+                الْحَمْدُ
+                لِلَّهِ الَّذِي أَقَالَنَا يَوْمَنَا هَذَا وَلَمْ يُهْلِكْنَا بِذُنُوبِنَا<br>
+                )(مُسْلِمْ
+              </p>
 
-            <p class="meaning">
+              <p class="meaning">
                 All praise be to Allah who has forgiven
-                us today and not destroyed us due to our sin. (Muslim) 
-                
-                </p>
-                <h3>In the
-                evening recite</h3> 
-                <p class="arb">
+                us today and not destroyed us due to our sin. (Muslim)
+
+              </p>
+              <h3>In the
+                evening recite</h3>
+              <p class="arb">
                 أَمْسَيْنَا وَأَمْسَى الْمُلْكُ لِلَّهِ رَبِّ
                 الْعَالَمِينَ اللَّهُمَّ إِنِّي أَسْأَلُكَ خَيْرَ هَذِهِ
                 اللَّيْلَةَ فَتْحَهَا وَنَصْرَهَا وَنُورَهَا وَبَرَكَتَهَا
                 وَهُدَاهَا وَأَعُوذُ بِكَ مِنْ شَرِّ مَا فِيهَا وَشَرِّ مَا
-                بَعْدَهَا 
-                </p>
-                <p class="meaning">
+                بَعْدَهَا
+              </p>
+              <p class="meaning">
                 The evening has come to me and the whole universe
                 belongs to Allah who is The Lord of the worlds. O Allah, I ask
                 of you the good of the night, it's success and aid and its nur
                 (celestial light) and barakaat (blessings) and seek hidayat
                 (guidance) and refuge from the evil of this night and the evil
                 that is to come later. (Abu Dawood) </p>
-                
-                
-                Alternatively recite this
-                <p class="arb">
+
+
+              Alternatively recite this
+              <p class="arb">
                 اللَّهُمَّ بِكَ أَمْسَيْنَا وَبِكَ أَصْبَحْنَا وَبِكَ نَحْيَا
-                وَبِكَ نَمُوتُ وَإِلَيْكَ النُّشُورُ 
-                </p>
-                <p class="meaning">
+                وَبِكَ نَمُوتُ وَإِلَيْكَ النُّشُورُ
+              </p>
+              <p class="meaning">
                 O Allah we enter the night
                 and the day and live and die with Your Qudrat (strength) and to
                 You do we return. (Tirmidhi) After the expiry of Maghrib time,
                 recite this dua
-                </p>
+              </p>
 
-                <p class="arb">
+              <p class="arb">
                 اللَّهُمَّ إِنَّ هَذَا إِقْبَالُ لَيْلِكَ
-                وَإِدْبَارُ نَهَارِكَ وَأَصْوَاتُ دُعَاتِكَ فَاغْفِرْ لِي 
-                </p>
+                وَإِدْبَارُ نَهَارِكَ وَأَصْوَاتُ دُعَاتِكَ فَاغْفِرْ لِي
+              </p>
 
-                <p class="meaning">
+              <p class="meaning">
                 O Allah, this is the time of the coming of the night and the
                 passing of the day and the voices of those calling You to
                 forgive us. (Miskhaat) Other supplications to be recited in the
@@ -163,473 +167,1179 @@
                 (S.A.W.) has said that (nothing will harm) the servant who
                 recites these words three times every morning and evening.
 
-                </p>
-                بِسْمِ اللَّهِ الَّذِي لَا يَضُرُّ مَعَ اسْمِهِ شَيْءٌ فِي
-                الْأَرْضِ وَلَا فِي السَّمَاءِ وَهُوَ السَّمِيعُ الْعَلِيمُ We
-                have made (started) the morning (and night) in whose Name
-                nothing in the skies and the earth can harm and He is the
-                All-hearing, the All-knowing. (Tirmidhi) It is narrated by Abu
-                Dawood that if one recites this dua in the morning, no
-                unforeseen calamity will come to him. (Miskhat) Prophet Mohammad
-                (S.A.W.) said that if a person recites three ayats of Surah Rum
-                (Para 21) and if he misses his normal recitation of the day, he
-                will still be rewarded for it. This applies to the night as
-                well. فَسُبْحَانَ اللَّهِ حِينَ تُمْسُونَ وَحِينَ تُصْبِحُونَ *
-                وَلَهُ الْحَمْدُ فِي السَّمَاوَاتِ وَالْأَرْضِ وَعَشِيًّا
-                وَحِينَ تُظْهِرُونَ * يُخْرِجُ الْحَيَّ مِنَ الْمَيِّتِ
-                وَيُخْرِجُ الْمَيِّتَ مِنَ الْحَيِّ وَيُحْيِي الْأَرْضَ بَعْدَ
-                مَوْتِهَا وَكَذَلِكَ تُخْرَجُونَ "So remember Allah in the
-                evening and the morning. To him is the praise in the Heavens and
-                the Earth and in the last hours and when it is noon. He brings
-                forth the living from the dead and the dead from the living and
-                He revives the earth after it is dead. And even so you shall be
-                brought forth". Abu Huraira (R.A) narrated that Prophet Mohammad
-                (S.A.W.) said that whosoever reads the beginning of Surah Mo'min
-                (para 24) and Ayatul-Qursi in the morning, then he will be
-                protected from calamaties and ploys till the evening and
-                whosoever recites these in the evenings, will be protected from
-                calamities and ploys till the morning. حم * تَنزِيلُ الْكِتَابِ
-                مِنَ اللَّهِ الْعَزِيزِ الْعَلِيمِ * غَافِرِ الذَّنبِ وَقَابِلِ
-                التَّوْبِ شَدِيدِ الْعِقَابِ ذِي الطَّوْلِ لَا إِلَهَ إِلَّا
-                هُوَ إِلَيْهِ الْمَصِيرُ "Ha. Meem, The sending down of this
-                book is from Allah who is the All-Mighty, the All-Knowing, The
-                Forgiver of sins and the Acceptor of repentance, Severe in
-                retribution, Bountiful there is no ilah but He, Unto Him is our
-                return". اللَّهُ لاَ إِلَـهَ إِلاَّ هُوَ الْحَيُّ الْقَيُّومُ
-                لاَ تَأْخُذُهُ سِنَةٌ وَلاَ نَوْمٌ لَّهُ مَا فِي السَّمَاوَاتِ
-                وَمَا فِي الْأَرْضِ مَن ذَا الَّذِي يَشْفَعُ عِندَهُ إِلاَّ
-                بِإِذْنِهِ يَعْلَمُ مَا بَيْنَ أَيْدِيهِمْ وَمَا خَلْفَهُمْ
-                وَلاَ يُحِيطُونَ بِشَيْءٍ مِّنْ عِلْمِهِ إِلاَّ بِمَا شَاءَ
-                وَسِعَ كُرْسِيُّهُ السَّمَاوَاتِ وَالْأَرْضَ وَلاَ يَئُودُهُ
-                حِفْظُهُمَا وَهُوَ الْعَلِيُّ الْعَظِيمُ Allah! There is no ilah
-                (deity worthy of worship) but He The Living, The Eternal One.
-                Neither slumber, nor sleep overtakes Him. To Him belonges
-                whatever is in the Heavens and on the earth. Who is he that can
-                intercede with Him but by His permission? He knows what is
-                before and what is behind them. They encompass nothing of His
-                knowledge which He will. His Throne extends over the Heavens and
-                the Earth, and the preservation of both does not weary Him. He
-                is the Exalted The Immense One. (Qur'an 2:255) Prophet Mohammad
-                (S.A.W.) stated that a person who has recited (the underlying)
-                in the morning, he has pleased (praised, glorified) Allah for
-                His favours of the morning, and if he has done so in the night,
-                he has thanked Allah for His favours of the night. (Abu Dawood,
-                Nisai) اللَّهُمَّ مَا أَصْبَحَ بِي مِنْ نِعْمَةٍ أَوْ بِأَحَدٍ
-                مِنْ خَلْقِكَ فَمِنْكَ وَحْدَكَ لَا شَرِيكَ لَكَ فَلَكَ
-                الْحَمْدُ وَلَكَ الشُّكْرُ Translation: "O Allah, whatever
-                favours You have bestowed upon me and all other creations is
-                only from you. You are One, You have no partners. Praise and
-                Shukr (thanks) be to You". If recited in the night, then recite
-                مَا أمَْسيَ in place of مَا أَصْبَحَ بِي Thuban (R.A.) narrated
-                that Prophet Mohammad (SAW) stated that if a Muslim servant
-                recites (the underlying) three times every morning, then it
-                becomes the responsibility of Allah to satisfy him on the Day of
-                Qiyamah. رَضِيتُ بِاللَّهِ رَبَّاً وَبِالْإِسْلَامِ دِينَاً
-                وَبِمُحَمَّدٍ نَبِيَّاً Translation: I am pleased with Allah as
-                my Lord, Islam as my Deen and Muhammad (SAW) as my Nabi.
-                (Tirmidhi) Muagal bin Yasaar (R.A.) narrates that Prophet
-                Mohammad (S.A.W.) has stated that a person who recites three
-                times أَعُوذُ بِاللَّهِ السَّمِيعِ الْعَلِيمِ مِنَ الشَّيْطَانِ
-                الرَّجِيمِ in the morning the last three ayats of Suratul Hashr
-                then Allah delegates 70,000 angles to send mercy onto him till
-                the evening and if he dies that day, he will die as a martyr and
-                if he recites these in the evening then Allah delegates 70,000
-                angels to send mercy onto him till the morning and if he dies
-                that night, he dies as martyr. (Tirmidhi) هُوَ اللَّهُ الَّذِي
-                لاَ إِلَهَ إِلاَّ هُوَ عَالِمُ الْغَيْبِ وَالشَّهَادَةِ هُوَ
-                الرَّحْمَنُ الرَّحِيمُ * هُوَ اللَّهُ الَّذِي لاَ إِلَهَ إِلاَّ
-                هُوَ الْمَلِكُ الْقُدُّوسُ السَّلامُ الْمُؤْمِنُ الْمُهَيْمِنُ
-                الْعَزِيزُ الْجَبَّارُ الْمُتَكَبِّرُ سُبْحَانَ اللَّهِ عَمَّا
-                يُشْرِكُونَ * هُوَ اللَّهُ الْخَالِقُ الْبَارِئُ الْمُصَوِّرُ
-                لَهُ الْأَسْمَاءُ الْحُسْنَى يُسَبِّحُ لَهُ مَا فِي
-                السَّمَاوَاتِ وَالْأَرْضِ وَهُوَ الْعَزِيزُ الْحَكِيمُ * "He is
-                Allah, there is no ilah but He, He is the knower of the unseen
-                and the witness He is the All-Merciful, the All compassionate.
-                He is Allah, there is no ilah but He. He is the king, the Holy,
-                the Giver of Safety. The Taker-in shelter the All-Mighty, the
-                omnipotent, the All-Sublime. Allah is Pure and Pure of what they
-                associate (with Him). He is Allah, the Creator, the One who is
-                Perfect. To Him belong names Most Excellent. All that is in the
-                heavens and the earth, glorify Him and He is the All-Mighty, the
-                All-Wise". Ataa bin Abi Rahaa (R.A.) narrates that Prophet
-                Mohammad (S.A.W.) has stated that if a person recites Surah
-                Yaseen early in the morning then his need for the day will be
-                fullfilled. (Mishkat) Benefit: The recitation of Surah Ikhlaas,
-                Surah Falaq and Surah Naas three times each in the mornings and
-                evenings, has been encouraged in the Ahadith. (Hisn-ulHasin)
-                Supplications to be recited at night Abdullah bin Masood (R.A.)
-                states that Prophet Mohammad (S.A.W.) has said that the person
-                who recites Suratul Waqia (para 27) every night, will never be
-                poverty stricken (hungry) (Baihagi in Shabatul Iman) Uthman
-                (R.A.) states that a person who recites from إِنَّ فِي خَلْقِ
-                السَّمَاوَاتِ وَالْأَرْضِ in Surah Al-Imran till the end of the
-                Surah on any night or part of the night, will receive the reward
-                of performing his Salaat for the whole night. (Mishkat) Jabir
-                (R.A.) states that Prophet Mohammad (S.A.W.) never slept before
-                reciting Surah Alif Laam Meem Sajda (21 para) and Surah
-                Tabarakal Lazi. (Mishkat) Abdullah bin Masood (R.A.) narrates
-                that Prophet Mohammad (S.A.W.) has stated that the person who
-                recites the last two ayats of Suratul Baqarah till the end, then
-                these two ayats will be sufficient for him, i.e. Allah will
-                protect him from all evil and ploys. (Bukhari, Muslim) When
-                retiring to sleep, make wudhu, dust off the bed three times, lie
-                on the right side, place the right hand under the head or cheeks
-                and recite the following dua three times. (Mishkat and Hsinul
-                Hasin, Bukhari Muslim) اللَّهُمَّ قِنِي عَذَابَكَ يَوْمَ
-                تَجْمَعُ عِبَادَكَ "O Allah, save me from the punishment on the
-                Day when You will gather Your servants". Alternatively recite
-                this dua بِاسْمِكَ رَبِّي وَضَعْتُ جَنْبِي وَبِكَ أَرْفَعُهُ
-                إِنْ أَمْسَكْتَ نَفْسِي فَارْحَمْهَا وَإِنْ أَرْسَلْتَهَا
-                فَاحْفَظْهَا بِمَا تَحْفَظُ بِهِ عِبَادَكَ الصَّالِحِينَ "Oh my
-                Lord, I have taken Your name and placed myself on my side and by
-                Your power will rise up again. If you take my soul whilst I am
-                sleeping (grant me death) then have mercy on my soul and if you
-                leave me (let me live) by your power protect me by that with
-                which you have protected your righteous servants". (Bukhari,
-                Muslim) Or recite this dua اللَّهُمَّ بِاسْمِكَ أَمُوتُ
-                وَأَحْيَا "O Allah, by Your name I live and die". (Bukhari,
-                Muslim) Or recite this dua اللَّهُمَّ أَسْلَمْتُ نَفْسِي
-                إِلَيْكَ وَوَجَّهْتُ وَجْهِي إِلَيْكَ وَفَوَّضْتُ أَمْرِي
-                إِلَيْكَ وَأَلْجَأْتُ ظَهْرِي إِلَيْكَ رَغْبَةً وَرَهْبَةً
-                إِلَيْكَ لَا مَلْجَأَ وَلَا مَنْجَا مِنْكَ إِلَّا إِلَيْكَ
-                آمَنْتُ بِكِتَابِكَ الَّذِي أَنْزَلْتَ وَنَبِيِّكَ الَّذِي
-                أَرْسَلْتَ "I submit my life to you, I turn towards You and
-                leave my work unto you, I lean on you, desire your boons and
-                fear you as there is no other salvation besides you. I believe
-                in the kitab (Book) you have revealed and in the Rasul(Prophet)
-                you have sent. Prophet Mohammad (S.A.W.) showed (taught a
-                Sahabi) this dua and said: "If after reading it you die in the
-                night, then it is as if you have died on 'Natural Deen' and if
-                you awake in the morning alive then you will have good fortune".
-                (Mishkat) Anas (R.A.) narrates that Prophet Mohammad (S.A.W.)
-                said that if a person retires to bed on the side and recites
-                Surah Fathiha and Surah Ikhlaas (Qul huwa- Allaho Ahad) he is
-                immune from everything besides death. (Hisnul Hasan from Albazr)
-                Sahabi (R.A.) requested Prophet Mohammad (S.A.W.) that Prophet
-                Mohammad (S.A.W.) teach him something to recite at the time of
-                retiring to bed. Prophet Mohammad (S.A.W.) said: "Recite Qul Ya
-                Ayuhal Kafiroon, for in it (there is an announcement) to refrain
-                from shirk. (Mishkat from Tirmidhi) In some ahadith it is stated
-                that one should sleep after reciting (i.e. not to talk after
-                reciting it). (Hisnul Hasin from Albazr) Ayesha (R.A.) narrates
-                that when Prophet Mohammad (S.A.W.) used to go to the room for
-                sleep, he used to recite Suras Ikhlaas, Falaq, Nass and blow
-                onto his hand (palms) in such a manner that the saliva would
-                drop on them and then he would rub them over his body three
-                times starting from the front of the face. (Bukhari, Muslim)
-                Beside this he would recite 33 times سُبْحَانَ اللَّهِ 33 times
-                الْحَمْدُ لِلَّهِ 34 times اللَّهُ أَكْبَرُ (Mishkat) He also
-                used to recite Ayatul Qursi as Allah has stipulated that the
-                reciter will be protected throughout the night by the angels and
-                the Satan will not come near. (Bukhari) Also recite this dua
-                three times أَسْتَغْفِرُ اللَّهَ الَّذِي لَا إِلَهَ إِلَّا هُوَ
-                الْحَيَّ الْقَيُّومَ وَأَتُوبِ إِلَيْهِ Its virtues are that all
-                the reciter's sins will be forgiven even if it be equal to the
-                extent of the foam in the ocean. (Tirmidhi) Recite Bismillah
-                while closing doors, covering utensils, and putting off the
-                light (candles etc.) (Mishkat) Prophet Mohammad (S.A.W.) said
-                that when a person enters his bed (to sleep), an angel and a
-                Shaitaan surround him. The Shaitaan whispers 'your awakening
-                will end in evil' and the angel says' end in good". One sleeps
-                after engaging in dhikr, the angels will protect him throughout
-                the night. In order to gain the protection of the angels, it is
-                wise to engage in Dhikr and then sleep. (Hisnul Hasin)
               </p>
-            </div>
-          </li>
-          <li class="zakat-calc extra-content">
-            <a href="#">Zakat Calc</a>
-            <div class="content_box box2">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio
-                recusandae nisi nostrum provident quas ea cumque eius veritatis
-                dignissimos ut. Vitae deserunt facilis officiis pariatur totam
-                quo, error fugit nobis!
-              </p>
-            </div>
-          </li>
-          <li class="AllahNames extra-content">
-            <a href="#">99 Names of Allah</a>
-            <div class="content_box box3">
-              <div id="names_div">
-<div>
-  <h3> اللَّھ</h3>
-<h4>  1. Allah: The God</h4>
-  <p> The only one Almighty. He alone is worthy of worship</p>
-  <footer> Found In Quraan Ayah(s): (1:1) (3:18 )</footer>
-</div>
-<div>
-  <h3> الرَّحْمَنُ</h3>
-  <h4> 2. Ar-Rahman: The Beneficent</h4>
-  <p>He who wills goodness and mercy for all His creatures</p>
-  <footer>Found In Quraan Ayah(s): (1:3) (17:110)</footer>
-</div>
-<div>
-  <h3> الرَّحِیمُ</h3>
-  <h4> 3. Ar-Rahim: The Merciful</h4>
-  <p>He who acts with extreme kindness</p>
-  <footer>Found In Quraan Ayah(s): (2:163)(3: 31)(4:100) (5:3)</footer>
-  </div>
-  <div>
-    <h3> الْمَلِكُ</h3>
-    <h4> 4. Al-Malik: The Eternal Lord</h4>
-    <p>
-    The Sovereign Lord, The One with the complete Dominion, the One Whose Dominion is clear from imperfection</p>
-    <footer>Found In Quraan Ayah(s): (20:114)(2 3:116)(59: 23)(62:1)</footer>
-    </div>
-
-    <div>
-    <h3>  الْقُدُّوسُ
-      </h3> 
-      <h4>5. Al-Quddus: The Most Sacred</h4>
-      <p>
-      The One who is pure from any imperfection and clear from children and adversaries
-      </p>
-      <footer>
-      Found In Quraan Ayah(s): (59:23) (62:1)</footer>
-      </div>
-
-      <div>
-        <h3> السَّلاَمُ
-        </h3> 6. As-Salaam :The Embodiment of Peace
-        <p>
-        The One who is free from every imperfection.
-        </p>
-        <footer> Found In Quraan Ayah(s): (59:23)</footer>
-        </div>
-
-        <div>
-          <h3> الْمُؤْمِنُ
-          </h3> 7. Al-Mu'min: The Infuser of Faith
-          <p>
-          The One who witnessed for Himself that no one is God but Him. And He witnessed for His believers that they are truthful in their belief that no one is God but Him
-          </p>
-          <footer> Found In Quraan Ayah(s): (59:23)</footer>
-        </div>
-
-        <div>
-        <h3>  الْمُھَیْمِنُ
-          </h3>
-          <h4>8. Al-Muhaymin: The Preserver of Safety</h4>
-          <p> The One who witnesses the saying and deeds of His creatures</p>
-          <footer>Found In Quraan Ayah(s): (59:23)</footer>
+              بِسْمِ اللَّهِ الَّذِي لَا يَضُرُّ مَعَ اسْمِهِ شَيْءٌ فِي
+              الْأَرْضِ وَلَا فِي السَّمَاءِ وَهُوَ السَّمِيعُ الْعَلِيمُ We
+              have made (started) the morning (and night) in whose Name
+              nothing in the skies and the earth can harm and He is the
+              All-hearing, the All-knowing. (Tirmidhi) It is narrated by Abu
+              Dawood that if one recites this dua in the morning, no
+              unforeseen calamity will come to him. (Miskhat) Prophet Mohammad
+              (S.A.W.) said that if a person recites three ayats of Surah Rum
+              (Para 21) and if he misses his normal recitation of the day, he
+              will still be rewarded for it. This applies to the night as
+              well. فَسُبْحَانَ اللَّهِ حِينَ تُمْسُونَ وَحِينَ تُصْبِحُونَ *
+              وَلَهُ الْحَمْدُ فِي السَّمَاوَاتِ وَالْأَرْضِ وَعَشِيًّا
+              وَحِينَ تُظْهِرُونَ * يُخْرِجُ الْحَيَّ مِنَ الْمَيِّتِ
+              وَيُخْرِجُ الْمَيِّتَ مِنَ الْحَيِّ وَيُحْيِي الْأَرْضَ بَعْدَ
+              مَوْتِهَا وَكَذَلِكَ تُخْرَجُونَ "So remember Allah in the
+              evening and the morning. To him is the praise in the Heavens and
+              the Earth and in the last hours and when it is noon. He brings
+              forth the living from the dead and the dead from the living and
+              He revives the earth after it is dead. And even so you shall be
+              brought forth". Abu Huraira (R.A) narrated that Prophet Mohammad
+              (S.A.W.) said that whosoever reads the beginning of Surah Mo'min
+              (para 24) and Ayatul-Qursi in the morning, then he will be
+              protected from calamaties and ploys till the evening and
+              whosoever recites these in the evenings, will be protected from
+              calamities and ploys till the morning. حم * تَنزِيلُ الْكِتَابِ
+              مِنَ اللَّهِ الْعَزِيزِ الْعَلِيمِ * غَافِرِ الذَّنبِ وَقَابِلِ
+              التَّوْبِ شَدِيدِ الْعِقَابِ ذِي الطَّوْلِ لَا إِلَهَ إِلَّا
+              هُوَ إِلَيْهِ الْمَصِيرُ "Ha. Meem, The sending down of this
+              book is from Allah who is the All-Mighty, the All-Knowing, The
+              Forgiver of sins and the Acceptor of repentance, Severe in
+              retribution, Bountiful there is no ilah but He, Unto Him is our
+              return". اللَّهُ لاَ إِلَـهَ إِلاَّ هُوَ الْحَيُّ الْقَيُّومُ
+              لاَ تَأْخُذُهُ سِنَةٌ وَلاَ نَوْمٌ لَّهُ مَا فِي السَّمَاوَاتِ
+              وَمَا فِي الْأَرْضِ مَن ذَا الَّذِي يَشْفَعُ عِندَهُ إِلاَّ
+              بِإِذْنِهِ يَعْلَمُ مَا بَيْنَ أَيْدِيهِمْ وَمَا خَلْفَهُمْ
+              وَلاَ يُحِيطُونَ بِشَيْءٍ مِّنْ عِلْمِهِ إِلاَّ بِمَا شَاءَ
+              وَسِعَ كُرْسِيُّهُ السَّمَاوَاتِ وَالْأَرْضَ وَلاَ يَئُودُهُ
+              حِفْظُهُمَا وَهُوَ الْعَلِيُّ الْعَظِيمُ Allah! There is no ilah
+              (deity worthy of worship) but He The Living, The Eternal One.
+              Neither slumber, nor sleep overtakes Him. To Him belonges
+              whatever is in the Heavens and on the earth. Who is he that can
+              intercede with Him but by His permission? He knows what is
+              before and what is behind them. They encompass nothing of His
+              knowledge which He will. His Throne extends over the Heavens and
+              the Earth, and the preservation of both does not weary Him. He
+              is the Exalted The Immense One. (Qur'an 2:255) Prophet Mohammad
+              (S.A.W.) stated that a person who has recited (the underlying)
+              in the morning, he has pleased (praised, glorified) Allah for
+              His favours of the morning, and if he has done so in the night,
+              he has thanked Allah for His favours of the night. (Abu Dawood,
+              Nisai) اللَّهُمَّ مَا أَصْبَحَ بِي مِنْ نِعْمَةٍ أَوْ بِأَحَدٍ
+              مِنْ خَلْقِكَ فَمِنْكَ وَحْدَكَ لَا شَرِيكَ لَكَ فَلَكَ
+              الْحَمْدُ وَلَكَ الشُّكْرُ Translation: "O Allah, whatever
+              favours You have bestowed upon me and all other creations is
+              only from you. You are One, You have no partners. Praise and
+              Shukr (thanks) be to You". If recited in the night, then recite
+              مَا أمَْسيَ in place of مَا أَصْبَحَ بِي Thuban (R.A.) narrated
+              that Prophet Mohammad (SAW) stated that if a Muslim servant
+              recites (the underlying) three times every morning, then it
+              becomes the responsibility of Allah to satisfy him on the Day of
+              Qiyamah. رَضِيتُ بِاللَّهِ رَبَّاً وَبِالْإِسْلَامِ دِينَاً
+              وَبِمُحَمَّدٍ نَبِيَّاً Translation: I am pleased with Allah as
+              my Lord, Islam as my Deen and Muhammad (SAW) as my Nabi.
+              (Tirmidhi) Muagal bin Yasaar (R.A.) narrates that Prophet
+              Mohammad (S.A.W.) has stated that a person who recites three
+              times أَعُوذُ بِاللَّهِ السَّمِيعِ الْعَلِيمِ مِنَ الشَّيْطَانِ
+              الرَّجِيمِ in the morning the last three ayats of Suratul Hashr
+              then Allah delegates 70,000 angles to send mercy onto him till
+              the evening and if he dies that day, he will die as a martyr and
+              if he recites these in the evening then Allah delegates 70,000
+              angels to send mercy onto him till the morning and if he dies
+              that night, he dies as martyr. (Tirmidhi) هُوَ اللَّهُ الَّذِي
+              لاَ إِلَهَ إِلاَّ هُوَ عَالِمُ الْغَيْبِ وَالشَّهَادَةِ هُوَ
+              الرَّحْمَنُ الرَّحِيمُ * هُوَ اللَّهُ الَّذِي لاَ إِلَهَ إِلاَّ
+              هُوَ الْمَلِكُ الْقُدُّوسُ السَّلامُ الْمُؤْمِنُ الْمُهَيْمِنُ
+              الْعَزِيزُ الْجَبَّارُ الْمُتَكَبِّرُ سُبْحَانَ اللَّهِ عَمَّا
+              يُشْرِكُونَ * هُوَ اللَّهُ الْخَالِقُ الْبَارِئُ الْمُصَوِّرُ
+              لَهُ الْأَسْمَاءُ الْحُسْنَى يُسَبِّحُ لَهُ مَا فِي
+              السَّمَاوَاتِ وَالْأَرْضِ وَهُوَ الْعَزِيزُ الْحَكِيمُ * "He is
+              Allah, there is no ilah but He, He is the knower of the unseen
+              and the witness He is the All-Merciful, the All compassionate.
+              He is Allah, there is no ilah but He. He is the king, the Holy,
+              the Giver of Safety. The Taker-in shelter the All-Mighty, the
+              omnipotent, the All-Sublime. Allah is Pure and Pure of what they
+              associate (with Him). He is Allah, the Creator, the One who is
+              Perfect. To Him belong names Most Excellent. All that is in the
+              heavens and the earth, glorify Him and He is the All-Mighty, the
+              All-Wise". Ataa bin Abi Rahaa (R.A.) narrates that Prophet
+              Mohammad (S.A.W.) has stated that if a person recites Surah
+              Yaseen early in the morning then his need for the day will be
+              fullfilled. (Mishkat) Benefit: The recitation of Surah Ikhlaas,
+              Surah Falaq and Surah Naas three times each in the mornings and
+              evenings, has been encouraged in the Ahadith. (Hisn-ulHasin)
+              Supplications to be recited at night Abdullah bin Masood (R.A.)
+              states that Prophet Mohammad (S.A.W.) has said that the person
+              who recites Suratul Waqia (para 27) every night, will never be
+              poverty stricken (hungry) (Baihagi in Shabatul Iman) Uthman
+              (R.A.) states that a person who recites from إِنَّ فِي خَلْقِ
+              السَّمَاوَاتِ وَالْأَرْضِ in Surah Al-Imran till the end of the
+              Surah on any night or part of the night, will receive the reward
+              of performing his Salaat for the whole night. (Mishkat) Jabir
+              (R.A.) states that Prophet Mohammad (S.A.W.) never slept before
+              reciting Surah Alif Laam Meem Sajda (21 para) and Surah
+              Tabarakal Lazi. (Mishkat) Abdullah bin Masood (R.A.) narrates
+              that Prophet Mohammad (S.A.W.) has stated that the person who
+              recites the last two ayats of Suratul Baqarah till the end, then
+              these two ayats will be sufficient for him, i.e. Allah will
+              protect him from all evil and ploys. (Bukhari, Muslim) When
+              retiring to sleep, make wudhu, dust off the bed three times, lie
+              on the right side, place the right hand under the head or cheeks
+              and recite the following dua three times. (Mishkat and Hsinul
+              Hasin, Bukhari Muslim) اللَّهُمَّ قِنِي عَذَابَكَ يَوْمَ
+              تَجْمَعُ عِبَادَكَ "O Allah, save me from the punishment on the
+              Day when You will gather Your servants". Alternatively recite
+              this dua بِاسْمِكَ رَبِّي وَضَعْتُ جَنْبِي وَبِكَ أَرْفَعُهُ
+              إِنْ أَمْسَكْتَ نَفْسِي فَارْحَمْهَا وَإِنْ أَرْسَلْتَهَا
+              فَاحْفَظْهَا بِمَا تَحْفَظُ بِهِ عِبَادَكَ الصَّالِحِينَ "Oh my
+              Lord, I have taken Your name and placed myself on my side and by
+              Your power will rise up again. If you take my soul whilst I am
+              sleeping (grant me death) then have mercy on my soul and if you
+              leave me (let me live) by your power protect me by that with
+              which you have protected your righteous servants". (Bukhari,
+              Muslim) Or recite this dua اللَّهُمَّ بِاسْمِكَ أَمُوتُ
+              وَأَحْيَا "O Allah, by Your name I live and die". (Bukhari,
+              Muslim) Or recite this dua اللَّهُمَّ أَسْلَمْتُ نَفْسِي
+              إِلَيْكَ وَوَجَّهْتُ وَجْهِي إِلَيْكَ وَفَوَّضْتُ أَمْرِي
+              إِلَيْكَ وَأَلْجَأْتُ ظَهْرِي إِلَيْكَ رَغْبَةً وَرَهْبَةً
+              إِلَيْكَ لَا مَلْجَأَ وَلَا مَنْجَا مِنْكَ إِلَّا إِلَيْكَ
+              آمَنْتُ بِكِتَابِكَ الَّذِي أَنْزَلْتَ وَنَبِيِّكَ الَّذِي
+              أَرْسَلْتَ "I submit my life to you, I turn towards You and
+              leave my work unto you, I lean on you, desire your boons and
+              fear you as there is no other salvation besides you. I believe
+              in the kitab (Book) you have revealed and in the Rasul(Prophet)
+              you have sent. Prophet Mohammad (S.A.W.) showed (taught a
+              Sahabi) this dua and said: "If after reading it you die in the
+              night, then it is as if you have died on 'Natural Deen' and if
+              you awake in the morning alive then you will have good fortune".
+              (Mishkat) Anas (R.A.) narrates that Prophet Mohammad (S.A.W.)
+              said that if a person retires to bed on the side and recites
+              Surah Fathiha and Surah Ikhlaas (Qul huwa- Allaho Ahad) he is
+              immune from everything besides death. (Hisnul Hasan from Albazr)
+              Sahabi (R.A.) requested Prophet Mohammad (S.A.W.) that Prophet
+              Mohammad (S.A.W.) teach him something to recite at the time of
+              retiring to bed. Prophet Mohammad (S.A.W.) said: "Recite Qul Ya
+              Ayuhal Kafiroon, for in it (there is an announcement) to refrain
+              from shirk. (Mishkat from Tirmidhi) In some ahadith it is stated
+              that one should sleep after reciting (i.e. not to talk after
+              reciting it). (Hisnul Hasin from Albazr) Ayesha (R.A.) narrates
+              that when Prophet Mohammad (S.A.W.) used to go to the room for
+              sleep, he used to recite Suras Ikhlaas, Falaq, Nass and blow
+              onto his hand (palms) in such a manner that the saliva would
+              drop on them and then he would rub them over his body three
+              times starting from the front of the face. (Bukhari, Muslim)
+              Beside this he would recite 33 times سُبْحَانَ اللَّهِ 33 times
+              الْحَمْدُ لِلَّهِ 34 times اللَّهُ أَكْبَرُ (Mishkat) He also
+              used to recite Ayatul Qursi as Allah has stipulated that the
+              reciter will be protected throughout the night by the angels and
+              the Satan will not come near. (Bukhari) Also recite this dua
+              three times أَسْتَغْفِرُ اللَّهَ الَّذِي لَا إِلَهَ إِلَّا هُوَ
+              الْحَيَّ الْقَيُّومَ وَأَتُوبِ إِلَيْهِ Its virtues are that all
+              the reciter's sins will be forgiven even if it be equal to the
+              extent of the foam in the ocean. (Tirmidhi) Recite Bismillah
+              while closing doors, covering utensils, and putting off the
+              light (candles etc.) (Mishkat) Prophet Mohammad (S.A.W.) said
+              that when a person enters his bed (to sleep), an angel and a
+              Shaitaan surround him. The Shaitaan whispers 'your awakening
+              will end in evil' and the angel says' end in good". One sleeps
+              after engaging in dhikr, the angels will protect him throughout
+              the night. In order to gain the protection of the angels, it is
+              wise to engage in Dhikr and then sleep. (Hisnul Hasin)
+            </p>
           </div>
-
-          <div>
-            <h3> الْعَزِیزُ
-          </h3> 
-          <h4> 9. Al-'Aziz: The Mighty One</h4>
-            <p>The Strong, The Defeater who is not defeated</p>
-            <footer> Found In Quraan Ayah(s): (3:6)(4:15 8)(9:40)(4 8:7)</footer>
-            </div>
-
-            <div>
-              <h3> الْجَبَّارُ
-              </h3>
-              <h4>10. Al-Jabbar: The Omnipotent One</h4>
-              <p>The One that nothing happens in His Dominion except that which He willed</p>
-              <footer> Found In Quraan Ayah(s): (59:23)</footer>
-            </div>
-
-            <div>
-                <h3> الْمُتَكَبِّرُ
-                </h3> 
-                <h4>11. Al-Mutakabbir: The Dominant One</h4>
-              <p>  The One who is clear from the attributes of the creatures and from resembling them.</p>
-              <footer>  Found In Quraan Ayah(s): (59:23)</footer>
+        </li>
+        <li class="zakat-calc extra-content">
+          <a href="#">Zakat Calc</a>
+          <div class="content_box box2">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio
+              recusandae nisi nostrum provident quas ea cumque eius veritatis
+              dignissimos ut. Vitae deserunt facilis officiis pariatur totam
+              quo, error fugit nobis!
+            </p>
+          </div>
+        </li>
+        <li class="AllahNames extra-content">
+          <a href="#">99 Names of Allah</a>
+          <div class="content_box box3">
+            <div id="names_div">
+              <div>
+                <h3> اللَّھ</h3>
+                <h4> 1. Allah: The God</h4>
+                <p> The only one Almighty. He alone is worthy of worship</p>
+                <footer> Found In Quraan Ayah(s): (1:1) (3:18 )</footer>
+              </div>
+              <div>
+                <h3> الرَّحْمَنُ</h3>
+                <h4> 2. Ar-Rahman: The Beneficent</h4>
+                <p>He who wills goodness and mercy for all His creatures</p>
+                <footer>Found In Quraan Ayah(s): (1:3) (17:110)</footer>
+              </div>
+              <div>
+                <h3> الرَّحِیمُ</h3>
+                <h4> 3. Ar-Rahim: The Merciful</h4>
+                <p>He who acts with extreme kindness</p>
+                <footer>Found In Quraan Ayah(s): (2:163)(3: 31)(4:100) (5:3)</footer>
+              </div>
+              <div>
+                <h3> الْمَلِكُ</h3>
+                <h4> 4. Al-Malik: The Eternal Lord</h4>
+                <p>
+                  The Sovereign Lord, The One with the complete Dominion, the One Whose Dominion is clear from
+                  imperfection</p>
+                <footer>Found In Quraan Ayah(s): (20:114)(2 3:116)(59: 23)(62:1)</footer>
               </div>
 
               <div>
-                  <h3> الْخَالِقُ
-                  </h3>
-                  <h4>12. Al-Khaaliq: The Creator</h4>
-                  <p>
-                  The One who brings everything from nonexistence to existence
-                  </p>
-                  <footer>
-                  Found In Quraan Ayah(s): (6:102)(13 :16)(39:62 )(40:62)(5 9:24)
-                  </footer>
-                </div>
+                <h3> الْقُدُّوسُ
+                </h3>
+                <h4>5. Al-Quddus: The Most Sacred</h4>
+                <p>
+                  The One who is pure from any imperfection and clear from children and adversaries
+                </p>
+                <footer>
+                  Found In Quraan Ayah(s): (59:23) (62:1)</footer>
+              </div>
 
-                <div>
-                    <h3> الْبَارِئُ
-                     </h3>
-                     <h4>13. Al-Baari: The Evolver</h4>
-                     <p>The Maker, The Creator who has the Power to turn the entities.</p>
-                     <footer>Found In Quraan Ayah(s): (59:24)</footer>
-                      </div>
-            
-            <div>
-              <h3> الْمُصَوِّرُ</h3>
-                   <h4>14. Al-Musawwir: The Flawless Shaper</h4>
-                    <p> The One who forms His creatures in different pictures.</p>
+              <div>
+                <h3> السَّلاَمُ
+                </h3> 6. As-Salaam :The Embodiment of Peace
+                <p>
+                  The One who is free from every imperfection.
+                </p>
+                <footer> Found In Quraan Ayah(s): (59:23)</footer>
+              </div>
+
+              <div>
+                <h3> الْمُؤْمِنُ
+                </h3> 7. Al-Mu'min: The Infuser of Faith
+                <p>
+                  The One who witnessed for Himself that no one is God but Him. And He witnessed for His believers that
+                  they are truthful in their belief that no one is God but Him
+                </p>
+                <footer> Found In Quraan Ayah(s): (59:23)</footer>
+              </div>
+
+              <div>
+                <h3> الْمُھَیْمِنُ
+                </h3>
+                <h4>8. Al-Muhaymin: The Preserver of Safety</h4>
+                <p> The One who witnesses the saying and deeds of His creatures</p>
+                <footer>Found In Quraan Ayah(s): (59:23)</footer>
+              </div>
+
+              <div>
+                <h3> الْعَزِیزُ
+                </h3>
+                <h4> 9. Al-'Aziz: The Mighty One</h4>
+                <p>The Strong, The Defeater who is not defeated</p>
+                <footer> Found In Quraan Ayah(s): (3:6)(4:15 8)(9:40)(4 8:7)</footer>
+              </div>
+
+              <div>
+                <h3> الْجَبَّارُ
+                </h3>
+                <h4>10. Al-Jabbar: The Omnipotent One</h4>
+                <p>The One that nothing happens in His Dominion except that which He willed</p>
+                <footer> Found In Quraan Ayah(s): (59:23)</footer>
+              </div>
+
+              <div>
+                <h3> الْمُتَكَبِّرُ
+                </h3>
+                <h4>11. Al-Mutakabbir: The Dominant One</h4>
+                <p> The One who is clear from the attributes of the creatures and from resembling them.</p>
+                <footer> Found In Quraan Ayah(s): (59:23)</footer>
+              </div>
+
+              <div>
+                <h3> الْخَالِقُ
+                </h3>
+                <h4>12. Al-Khaaliq: The Creator</h4>
+                <p>
+                  The One who brings everything from nonexistence to existence
+                </p>
+                <footer>
+                  Found In Quraan Ayah(s): (6:102)(13 :16)(39:62 )(40:62)(5 9:24)
+                </footer>
+              </div>
+
+              <div>
+                <h3> الْبَارِئُ
+                </h3>
+                <h4>13. Al-Baari: The Evolver</h4>
+                <p>The Maker, The Creator who has the Power to turn the entities.</p>
                 <footer>Found In Quraan Ayah(s): (59:24)</footer>
               </div>
 
-          <div>
-            <h3> الْغَفَّارُ
-              </h3>
-              <h4>15. Al-Ghaffaar: The Great Forgiver</h4>
-              <p>The Forgiver, The One who forgives the sins of His slaves time and time again.</p>
-              <footer>Found In Quraan Ayah(s): (20:82)(38 :66)(39:5) (40:42)(71 :10)</footer>
-            </div>
-
-            <div>
-              <h3>  الْقَھَّارُ
-               </h3> 
-               <h4>16. Al-Qahhaar: The All-Prevailing One</h4>
-               <p> The Dominant, The One who has the perfect Power and is not unable over anything.</p>
-               <footer> Found In Quraan Ayah(s): (13:16)(14 :48)(38:65 )(39:4)(40:16)</footer>
+              <div>
+                <h3> الْمُصَوِّرُ</h3>
+                <h4>14. Al-Musawwir: The Flawless Shaper</h4>
+                <p> The One who forms His creatures in different pictures.</p>
+                <footer>Found In Quraan Ayah(s): (59:24)</footer>
               </div>
 
               <div>
-                <h3>  الْوَھَّابُ
-              </h3>
-              <h4>17. Al-Wahhaab: The Supreme Bestower</h4>
-                 <p> The One who is Generous in giving plenty without any return. He is everything that benefits whether Halal or Haram.</p>
-                <footer>  Found In Quraan Ayah(s): (3:8)(38:9 )(38:35)</footer>
-                </div>
+                <h3> الْغَفَّارُ
+                </h3>
+                <h4>15. Al-Ghaffaar: The Great Forgiver</h4>
+                <p>The Forgiver, The One who forgives the sins of His slaves time and time again.</p>
+                <footer>Found In Quraan Ayah(s): (20:82)(38 :66)(39:5) (40:42)(71 :10)</footer>
+              </div>
 
-                <div>
-                  <h3>  الرَّزَّاقُ
-                  </h3> 
-                  <h4> 18. Ar-Razzaaq: The Total Provider</h4>
-                   <p> The Sustainer, The Provider.</p>
-                  <footer>  Found In Quraan Ayah(s): (51:58)</footer>
-                </div>
-                
-                <div>
-                   <h3> الْفَتَّاحُ
-                    </h3>
-                    <h4>19. Al-Fattah: The Supreme Solver</h4>
-                  <p>  The Opener, The Reliever, The Judge, The One who opens for His slaves the closed worldy and religious matters.
-                    </p>
-                   <footer> Found In Quraan Ayah(s): (34:26)</footer>
-                  </div>
+              <div>
+                <h3> الْقَھَّارُ
+                </h3>
+                <h4>16. Al-Qahhaar: The All-Prevailing One</h4>
+                <p> The Dominant, The One who has the perfect Power and is not unable over anything.</p>
+                <footer> Found In Quraan Ayah(s): (13:16)(14 :48)(38:65 )(39:4)(40:16)</footer>
+              </div>
 
-                  <div>
-                     <h3> العَاِیمُ
-                     </h3> 
-                     <h4>20. Al-'Alim: The All-Knowing One</h4>
-                     <p> The Knowledgeable; The One nothing is absent from His knowledge.</p>
-                    <footer>  Found In Quraan Ayah(s): (2:158)(3: 92)(4:35)( 24:41)(33:40)</footer>
-                    </div>
+              <div>
+                <h3> الْوَھَّابُ
+                </h3>
+                <h4>17. Al-Wahhaab: The Supreme Bestower</h4>
+                <p> The One who is Generous in giving plenty without any return. He is everything that benefits whether
+                  Halal or Haram.</p>
+                <footer> Found In Quraan Ayah(s): (3:8)(38:9 )(38:35)</footer>
+              </div>
+
+              <div>
+                <h3> الرَّزَّاقُ
+                </h3>
+                <h4> 18. Ar-Razzaaq: The Total Provider</h4>
+                <p> The Sustainer, The Provider.</p>
+                <footer> Found In Quraan Ayah(s): (51:58)</footer>
+              </div>
+
+              <div>
+                <h3> الْفَتَّاحُ
+                </h3>
+                <h4>19. Al-Fattah: The Supreme Solver</h4>
+                <p> The Opener, The Reliever, The Judge, The One who opens for His slaves the closed worldy and
+                  religious matters.
+                </p>
+                <footer> Found In Quraan Ayah(s): (34:26)</footer>
+              </div>
+
+              <div>
+                <h3> اَلْعَلِيْمُ
+                </h3>
+                <h4>20. Al-'Alim: The All-Knowing One</h4>
+                <p> The Knowledgeable; The One nothing is absent from His knowledge.</p>
+                <footer> Found In Quraan Ayah(s): (2:158)(3: 92)(4:35)( 24:41)(33:40)</footer>
+              </div>
 
 
-                    <div>
-                       <h3> الْقَابِضُ
-                        </h3>
-                        <h4>21. Al-Qaabid: The Restricting One</h4>
-                       <p> The Constricter, The Withholder, The One who constricts the sustenance by His wisdom and expands and widens it with His Generosity and Mercy.</p>
-                       <footer> Found In Quraan Ayah(s): (2: 245)</footer>
-                      </div>
+              <div>
+                <h3> الْقَابِضُ
+                </h3>
+                <h4>21. Al-Qaabid: The Restricting One</h4>
+                <p> The Constricter, The Withholder, The One who constricts the sustenance by His wisdom and expands and
+                  widens it with His Generosity and Mercy.</p>
+                <footer> Found In Quraan Ayah(s): (2: 245)</footer>
+              </div>
+
+              <div>
+                <h3> الْبَاسِطُ
+                </h3>
+                <h4>22. Al-Baasit: The Extender</h4>
+                <p> The Englarger, The One who constricts the sustenance by His wisdomand expands and widens it with His
+                  Generosity and Mercy.</p>
+                <footer> Found In Quraan Ayah(s): (2: 245)</footer>
+              </div>
+
+              <div>
+                <h3> الْخَافِضُ
+                </h3>
+                <h4>23. Al-Khaafid: The Reducer</h4>
+                <p> The Abaser, The One who lowers whoever He willed by His Destruction and raises whoever He willed by
+                  His Endowment.</p>
+                <footer> Found In Quraan Ayah(s):(95:5)</footer>
+              </div>
+
+              <div>
+                <h3> الرَّافِعُ
+                </h3>
+                <h4>24. Ar-Raafi': The Elevating One</h4>
+                <p> The Exalter, The Elevator, The One who lowers whoever He willed by His Destruction and raises
+                  whoever He willed by His Endowment.</p>
+                <footer> Found In Quraan Ayah(s): (58:11)(6: 83)</footer>
+              </div>
+
+              <div>
+                <h3> مُعِزُّالْ
+                </h3>
+                <h4>25. Al-Mu'izz: The Honourer-Bestower</h4>
+                <p> He gives esteem to whoever He willed, hence there is no one to degrade Him; And He degrades whoever
+                  He willed, hence there is no one to give Him esteem.</p>
+                <footer> Found In Quraan Ayah(s): (3:26)</footer>
+              </div>
+
+              <div>
+                <h3> المُذِلُّ
+                </h3>
+                <h4>26. Al-Mudhill: The Abaser</h4>
+                <p> The Dishonorer, The Humiliator, He gives esteem to whoever He willed, hence there is no one to
+                  degrade Him; And He degrades whoever He willed, hence there is no one to give Him esteem.</p>
+                <footer> Found In Quraan Ayah(s): (3:26)</footer>
+              </div>
+
+              <div>
+                <h3> السَّمِیعُ
+                </h3>
+                <h4> 27. As-Sami: The All-Hearer</h4>
+                <p> The Hearer, The One who Hears all things that are heard by His Eternal Hearing without an ear,
+                  instrument or organ.</p>
+                <footer> Found In Quraan Ayah(s): (2:127)(2: 256)(8:17) (49:1)</footer>
+              </div>
 
 
+              <div>
+                <h3> الْبَصِیرُ
+                </h3>
+                <h4> 28. Al-Basir: The All-Seeing</h4>
+                <p> The All-Noticing, The One who Sees all things that are seen by His Eternal Seeing without a pupil or
+                  any other instrument.</p>
+                <footer> Found In Quraan Ayah(s): (4:58)(17: 1)(42:11)( 42:27)</footer>
+              </div>
+
+              <div>
+                <h3> الْحَكَمُ
+                </h3>
+                <h4>29. Al-Hakam: The Impartial Judge</h4>
+                <p> The Judge, He is the Ruler and His judgment is His Word.</p>
+                <footer> Found In Quraan Ayah(s): (22:69)</footer>
+              </div>
+
+              <div>
+                <h3> الْعَدْلُ
+                </h3>
+                <h4>30. Al-'Adl: The Embodiment of Justice</h4>
+                <p>The Just, The One who is entitled to do what He does.</p>
+                <footer>Found In Quraan Ayah(s): (6:115)</footer>
+              </div>
+              <div>
+                <h3> اللَّطِیفُ
+                </h3>
+                <h4> 31. Al-Lateef: The Knower of Subtleties</h4>
+                <p> The Subtle One, The Gracious, The One who is kind to His slaves and endows upon them.</p>
+                <footer> Found In Quraan Ayah(s): (6:103)(22 :63)(31:16 )(33:34)</footer>
+              </div>
 
 
+              <div>
+                <h3> الْخَبِیرُ
+                </h3>
+                <h4> 32. Al-Khabeer: The All- Aware One</h4>
+                <p> The One who knows the truth of things.</p>
+                <footer> Found In Quraan Ayah(s): (6:18)(17: 30)(49:13) (59:18)</footer>
+              </div>
+
+              <div>
+                <h3> الْحَلِیمُ
+                </h3>
+                <h4> 33. Al-Halim: The Clement One</h4>
+                <p> The Forebearing, The One who delays the punishment for those who deserve it and then He might
+                  forgive them.</p>
+                <footer> Found In Quraan Ayah(s): (2:235)(17 :44)(22:59 )(35:41)</footer>
+              </div>
+
+              <div>
+                <h3> الْعَظِیمُ
+                </h3>
+                <h4>34. Al-'Adzheem: The Magnificent One</h4>
+                <p> The Great One, The Mighty, The One deserving the attributes of Exaltment, Glory, Extolement,and
+                  Purity from all imperfection.</p>
+                <footer> Found In Quraan Ayah(s): (2:255)(42 :4)(56:96)</footer>
+              </div>
+
+              <div>
+                <h3> الْغَفُورُ
+                </h3>
+                <h4> 35. Al-Ghafuur: The Great Forgiver</h4>
+                <p> The All-Forgiving, The Forgiving, The One who forgives a lot.</p>
+                <footer> Found In Quraan Ayah(s): (2:173)(8: 69)(16:11 0)(41:32)</footer>
+              </div>
+
+              <div>
+                <h3> الشَّكُورُ
+                  </h4>
+                  <h4>36. Ash-Shakuur: The Acknowledging One</h4>
+                  <p> The Grateful, The Appreciative, The One who gives a lot of reward for a little obedience.</p>
+                  <footer> Found In Quraan Ayah(s): (35:30)(35 :34)(42:23 )(64:17)</footer>
+              </div>
+
+              <div>
+                <h3> الْعَلِيُّ
+                </h3>
+                <h4>37. Al-'Ali: The Sublime One</h4>
+                <p>The Most High, The One who is clear from the attributes of the creatures.</p>
+                <footer> Found In Quraan Ayah(s): (4:34)(31: 30)(42:4)( 42:51)</footer>
+              </div>
 
 
+              <div>
+                <h3> الْكَبِیرُ
+                </h3>
+                <h4>38. Al-Kabeer: The Great One</h4>
+                <p> The Most Great, The Great, The One who is greater than everything in status.</p>
+                <footer> Found In Quraan Ayah(s): (13:9)(22: 62)</footer>(31:30)
+              </div>
 
+              <div>
+                <h3> الْحَفِیظُ
+                </h3>
+                <h4>39. Al-Hafidh: The Guarding One</h4>
+                <p>The Preserver, The Protector, The One who protects whatever and whoever He willed to protect.</p>
+                <footer> Found In Quraan Ayah(s): (11:57)(34 :21)(42:6)</footer>
+              </div>
 
+              <div>
+                <h3> المُقیِت
+                </h3>
+                <h4>40. Al-Muqit: The Sustaining One</h4>
+                <p> The Maintainer, The Guardian, The Feeder, The One who has the Power.</p>
+                <footer> Found In Quraan Ayah(s): (4:85)</footer>
+              </div>
 
+              <div>
+                <h3> الْحسِیبُ
+                </h3>
+                <h4>41. Al-Haseeb: The Reckoning One</h4>
+                <p> The Reckoner, The One who gives the satisfaction.</p>
+                <footer> Found In Quraan Ayah(s): (4:6)(4:86 )(33:39)</footer>
+              </div>
 
+              <div>
+                <h3> الْجَلِیلُ
+                </h3>
+                <h4>42. Aj-Jaleel: The Majestic One</h4>
+                <p> The Sublime One, The Beneficent, The One who is attributed with greatness of Power and Glory of
+                  status.</p>
+                <footer> Found In Quraan Ayah(s): (55:27)(39 :14)(7:143 )</footer>
+              </div>
+
+              <div>
+                <h3> الْكَرِیمُ
+                </h3>
+                <h4>43. Al-Kareem: The Bountiful One</h4>
+                <p> The Generous One, The Gracious, The One who is attributed with greatness of Power and Glory of
+                  status.
+                </p>
+                <footer> Found In Quraan Ayah(s): (27:40)(82 :6)</footer>
 
               </div>
+
+
+              <div>
+                <h3> الرَّقِیبُ
+                </h3>
+                <h4>44. Ar-Raqeeb: The Watchful One</h4>
+                <p> The Watcher, The One that nothing is absent from Him. Hence it's meaning is related to the attribute
+                  of Knowledge.</p>
+                <footer>Found In Quraan Ayah(s): (4:1)(5:11 7)</footer>
+              </div>
+
+
+              <div>
+                <h3> الْمُجِیبُ
+                </h3>
+                <h4>45. Al-Mujeeb: The Responding One</h4>
+                <p>The Responsive, The Hearkener, The One who answers the one in need if he asks Him and rescues the
+                  yearner if he calls upon Him.</p>
+                <footer>Found In Quraan Ayah(s): (11:61)</footer>
+              </div>
+
+
+              <div>
+                <h3> الْوَاسِعُ
+                </h3>
+                <h4>46. Al-Waasi': The All- Pervading One</h4>
+                <p> The Vast, The All- Embracing, The Knowledgeable.</p>
+                <footer> Found In Quraan Ayah(s): (2:268)(3: 73)(5:54)</footer>
+              </div>
+
+              <div>
+                <h3> الْحَكِیمُ
+                </h3>
+                <h4>47. Al-Hakim: The Wise One</h4>
+                <p> The Wise, The Judge of Judges, The One who is correct in His doings.</p>
+                <footer> Found In Quraan Ayah(s): (31:27)(46 :2)(57:1)( 66:2)</footer>
+              </div>
+
+
+              <div>
+                <h3> الْوَدُودُ
+                </h3>
+                <h4> 48. Al-Waduud: The Loving One</h4>
+                <p> The One who loves His believing slaves and His believing slaves love Him. His love to His slaves is
+                  His Will to be merciful to them and praise them</p>
+                <footer> Found In Quraan Ayah(s): (11:90)(85 :14)</footer>
+
+              </div>
+
+
+              <div>
+                <h3> الْمَجِیدُ
+                </h3>
+                <h4>49. Al-Majeed: The Glorious One</h4>
+                <p> The Most Glorious One, The One who is with perfect Power, High Status, Compassion, Generosity and
+                  Kindness.</p>
+                <footer> Found In Quraan Ayah(s): (11:73)</footer>
+              </div>
+
+
+              <div>
+                <h3> الْبَاعِثُ
+                </h3>
+                <h4>50. Al-Ba'ith: The Infuser of New Life</h4>
+                <p>The Reserrector, The Raiser (from death), The One who resurrects His slaves after death for reward
+                  and/or punishment.</p>
+                <footer>Found In Quraan Ayah(s): (22:7)</footer>
+              </div>
+
+
+              <div>
+                <h3> الشَّھِیدُ
+                </h3>
+                <h4>51. Ash-Shaheed: The All Observing Witness</h4>
+                <p>The Witness, The One who nothing is absent from Him.</p>
+                <footer> Found In Quraan Ayah(s): (4:166)(22 :17)(41:53 )(48:28)</footer>
+
+              </div>
+
+
+              <div>
+                <h3> الْحَقُّ
+                </h3>
+                <h4>52. Al-Haqq: The Embodiment of Truth</h4>
+                <p> The Truth, The True, The One who truly exists.</p>
+                <footer> Found In Quraan Ayah(s): (6:62)(22: 6)(23:116) </footer>(24:25)
+              </div>
+
+
+              <div>
+                <h3> الْوَكِیلُ
+                </h3>
+                <h4>53. Al-Wakeel: The Universal Trustee</h4>
+                <p>The Trustee, The One who gives the satisfaction and is relied upon.</p>
+                <footer> Found In Quraan Ayah(s): (3:173)(4: 171)(28:2 8)(73:9)</footer>
+              </div>
+
+              <div>
+                <h3> الْقَوِيُّ
+                </h3>
+                <h4> 54. Al-Qawi: The Strong One</h4>
+                <p> The Most Strong, The Strong, The One with the complete Power.</p>
+                <footer> Found In Quraan Ayah(s): (22:40)(22 :74)(42:19 )</footer>(57:25)
+              </div>
+
+
+              <div>
+                <h3> الْمَتِینُ
+                </h3>
+                <h4>55. Al-Mateen: The Firm One</h4>
+                <p> The One with extreme Power which is uninterrupted and He does not get tired.</p>
+                <footer> Found In Quraan Ayah(s): (51:58)</footer>
+              </div>
+
+
+              <div>
+                <h3> الْوَلِيُّ
+                </h3>
+                <h4> 56. Al-Wali: The Protecting Associate</h4>
+                <p> The Protecting Friend, The Supporter.</p>
+                <footer> Found In Quraan Ayah(s): (4:45)(7:1 96)(42:28) (45:19)</footer>
+              </div>
+
+
+              <div>
+                <h3> الْحَمِیدُ
+                </h3>
+                <h4> 57. Al-Hameed: The Sole- Laudable One</h4>
+                <p> The Praiseworthy, The praised One who deserves to be praised.</p>
+                <footer> Found In Quraan Ayah(s): (14:8)(31: 12)(31:26) (41:42)</footer>
+              </div>
+
+
+              <div>
+
+                <h3> الْمُحْصِي
+                </h3> 58. Al-Muhsi: The All- Enumerating One
+                <p>The Counter, The Reckoner, The One who the count of things are known to him.</p>
+                <footer> Found In Quraan Ayah(s): (72:28)(78 :29)(82:10 -12)</footer>
+              </div>
+
+
+              <div>
+                <h3> الْمُبْدِئُ
+                </h3>
+                <h4> 59. Al-Mubdi: The Originator</h4>
+                <p>The One who started the human being. That is, He created him.</p>
+                <footer>Found In Quraan Ayah(s): (10:34)(27 :64)(29:19 )(85:13)</footer>
+              </div>
+
+
+              <div>
+                <h3> الْمُعِیدُ
+                </h3>
+                <h4>60. Al-Mu'id: The Restorer</h4>
+                <p> The Reproducer, The One who brings back the creatures after death.</p>
+                <footer> Found In Quraan Ayah(s): (10:34)(27 :64)(29:19 )(85:13)</footer>
+              </div>
+
+
+              <div>
+                <h3> الْمُحْیِي
+                </h3>
+                <h4> 61. Al-Muhyi: The Maintainer of life</h4>
+                <p> The Restorer, The Giver of Life, The One who took out a living human from semen that does not have a
+                  soul. He gives life by giving the souls back to the worn out bodies on the resurrection day and He
+                  makes the hearts alive by the light of knowledge.</p>
+                <footer> Found In Quraan Ayah(s): (7:158)(15 :23)(30:50 )(57:2)</footer>
+              </div>
+
+
+              <div>
+                <h3> الْمُِمیتُ
+                </h3>
+                <h4> 62. Al-Mumeet: The Inflictor of Death</h4>
+                <p> The Creator of Death, The Destroyer, The One who renders the living dead.</p>
+                <footer> Found In Quraan Ayah(s): (3:156)(7: 158)(15:2 3)(57:2)</footer>
+              </div>
+
+              <div>
+                <h3> الْحَيُّ
+                </h3>
+                <h4>63. Al-Hayy: The Eternally Living One</h4>
+                <p> The Alive, The One attributed with a life that is unlike our life and is not that of a combination
+                  of soul, flesh or blood.</p>
+                <footer> Found In Quraan Ayah(s): (2:255)(3: 2)(25:58)( 40:65)</footer>
+              </div>
+
+
+
+              <div>
+                <h3> الْقَیُّومُ
+                </h3>
+                <h4> 64. Al-Qayyuum: The Self- Subsisting One
+                  The One who remains and does not end.</h4>
+                <footer>Found In Quraan Ayah(s): (2:255)(3: 2)(20:111)</footer>
+              </div>
+
+
+              <div>
+                <h3> الْوَاجِدُ
+                </h3>
+                <h4> 65. Al-Waajid: The Pointing One</h4>
+                <p> The Perceiver, The Finder, The Rich who is never poor. Al-Wajd is Richness.</p>
+                <footer> Found In Quraan Ayah(s): (38:44)</footer>
+              </div>
+
+
+              <div>
+                <h3> الْمَاجِدُ
+                </h3>
+                <h4>66. Al-Maajid: The All- Noble One</h4>
+                <p> The Glorious, He who is Most Glorious.</p>
+
+                <footer> Found In Quraan Ayah(s): (11:73)</footer>
+              </div>
+
+              <div>
+                <h3> الْواحِدُ
+                </h3>
+                <h4>67. Al-Waahid: The Only One</h4>
+                <p>The Unique, The One, The One without a partner.</p>
+                <footer> Found In Quraan Ayah(s): (2:163)(5: 73)(9:31)( 18:110)</footer>
+              </div>
+
+              <div>
+                <h3> اَلاَحَدُ
+                </h3>
+                <h4> 68. Al-Ahad: The Sole One</h4>
+                <p> The One.</p>
+                <footer> Found In Quraan Ayah(s): (112:1)</footer>
+              </div>
+
+              <div>
+                <h3> الصَّمَدُ
+                </h3>
+                <h4> 69. As-Samad: The Supreme Provider</h4>
+                <p>The Eternal, The Independent, The Master who is relied upon in matters and reverted to in ones needs.
+                </p>
+                <footer>Found In Quraan Ayah(s): (112:2)</footer>
+              </div>
+
+
+              <div>
+                <h3> الْقَادِرُ
+                </h3>
+                <h4> 70. Al-Qaadir: The Omnipotent One</h4>
+                <p> The Able, The Capable, The One attributed with Power.</p>
+                <footer> Found In Quraan Ayah(s): (6:65)(36: 81)(46:33) (75:40) </footer>
+              </div>
+
+
+              <div>
+                <h3> الْمُقْتَدِرُ
+                </h3>
+                <h4> 71. Al-Muqtadir: The All Authoritative One</h4>
+                <p> The Powerful, The Dominant, The One with the perfect Power that nothing is withheld from Him.</p>
+                <footer> Found In Quraan Ayah(s): (18:45)(54 :42)(54:55 )</footer>
+              </div>
+
+
+              <div>
+                <h3> الْمُقَدِّمُ
+                </h3>
+                <h4>72. Al-Muqaddim: The Expediting One</h4>
+                <p> The Expediter, The Promoter, The One who puts things in their right places. He makes ahead what He
+                  wills and delays what He wills.</p>
+                <footer> Found In Quraan Ayah(s): (16:61)(17:34)</footer>
+              </div>
+
+
+              <div>
+                <h3> الْمُؤَخِّرُ
+                </h3>
+                <h4>73. Al-Muakhkhir: The Procrastinator</h4>
+                <p> The Delayer, the Retarder, The One who puts things in their right places. He makes ahead what He
+                  wills and delays what He wills.</p>
+                <footer> Found In Quraan Ayah(s): (71:4)</footer>
+              </div>
+
+
+              <div>
+                <h3> الأوَّلُ
+                </h3>
+                <h4>74. Al-Awwal: The Very First</h4>
+                <p> The First, The One whose Existence is without a beginning.</p>
+                <footer> Found In Quraan Ayah(s): (57:3)</footer>
+              </div>
+
+
+              <div>
+                <h3> الآخِرُ
+                </h3>
+                <h4>75. Al-Akhir: The Infinite Last One</h4>
+                <p>The Last, The One whose Existence is without an end.</p>
+                <footer> Found In Quraan Ayah(s): (57:3)</footer>
+              </div>
+
+              <div>
+                <h3> الظَّاهِرُ
+                </h3>
+                <h4> 76. Adh-Dhahir: The Perceptible</h4>
+                <p>The Manifest, The One that nothing is above Him and nothing is underneath Him, hence He exists
+                  without a place. He, The Exalted, His Existence is obvious by proofs and He is clear from the
+                  delusions of attributes of bodies.</p>
+                <footer>Found In Quraan Ayah(s): (57:3)</footer>
+              </div>
+
+              <div>
+                <h3> الْبَاطِنُ
+                </h3>
+                <h4>77. Al-Batin: The Imperceptible</h4>
+                <p>The Hidden, The One that nothing is above Him and nothing is underneath Him, hence He exists without
+                  a place. He, The Exalted, His Existence is obvious by proofs and He is clear from the delusions of
+                  attributes of bodies.</p>
+                <footer> Found In Quraan Ayah(s): (57:3)</footer>
+              </div>
+
+              <div>
+                <h3> الْوَالِي
+                </h3>
+                <h4> 78. Al-Wali: The Holder of Supreme Authority</h4>
+                <p>The Governor, The One who owns things and manages them.</p>
+                <footer> Found In Quraan Ayah(s): (13:11)(22 :7)</footer>
+              </div>
+
+              <div>
+                <h3> الْمُتَعَالِي
+                </h3>
+                <h4>79. Al-Muta'ali: The Extremely Exalted One</h4>
+                <p> The Most Exalted, The High Exalted, The One who is clear from the attributes of the creation.</p>
+                <footer>Found In Quraan Ayah(s): (13:9)</footer>
+              </div>
+
+              <div>
+                <h3> الْبَرُّ
+                </h3>
+                <h4>80. Al-Barr: The Benign, The Source of All-Goodness</h4>
+                <p>The Source of All Goodness, The Righteous, The One who is kind to His creatures, who covered them
+                  with His sustenance and specified whoever He willed among them by His support, protection, and special
+                  mercy.</p>
+                <footer> Found In Quraan Ayah(s): (52:28)</footer>
+              </div>
+
+              <div>
+                <h3> التَوَّابُ
+                </h3>
+                <h4> 81. At-Tawwab: The Ever- Acceptor of Repentance</h4>
+                <p> The Relenting, The One who grants repentance to whoever He willed among His creatures and accepts
+                  his repentance.</p>
+                <footer> Found In Quraan Ayah(s): (2:128)(4: 64)(49:12) (110:3)</footer>
+              </div>
+
+              <div>
+                <h3> الْمُنْتَقِمُ
+                </h3>
+                <h4>82. Al-Muntaqim: The Retaliator</h4>
+                <p> The Avenger, The One who victoriously prevails over His enemies and punishes them for their sins. It
+                  may mean the One who destroys them.</p>
+                <footer> Found In Quraan Ayah(s): (32:22)(43 :41)(44:16 )</footer>
+              </div>
+
+              <div>
+                <h3> العَفُوُّ
+                </h3>
+                <h4>83. Al-'Afuw: The Supreme Pardoner</h4>
+                <p> The Forgiver, The One with wide forgiveness.</p>
+                <footer>Found In Quraan Ayah(s): (4:99)(4:1 49)(22:60)</footer>
+              </div>
+
+              <div>
+                <h3> الرَّؤُوفُ
+                </h3>
+                <h4>84. Ar-Ra'uf: The Benign One</h4>
+                <p>The Compassionate, The One with extreme Mercy. The Mercy of Allah is His will to endow upon whoever
+                  He willed among His creatures.</p>
+                <footer> Found In Quraan Ayah(s): (3:30)(9:1 17)(57:9)( 59:10)</footer>
+              </div>
+
+              <div>
+                <h3> مَالِكُ الْمُلْكِ
+                </h3>
+                <h4>85. Malik-ul-Mulk: The Eternal Possessor of Sovereignty</h4>
+                <p> The One who controls the Dominion and gives dominion to whoever He willed.</p>
+                <footer> Found In Quraan Ayah(s): (3:26)</footer>
+              </div>
+
+              <div>
+                <h3> ذُوالْجَلاَلِ وَ الإكْرَامِ
+                </h3>
+                <h4>86. Dhul Jalali wal Ikram: The Possessor of Majesty and Honour</h4>
+                <p> The Lord of Majesty and Bounty, The One who deserves to be Exalted and not denied.</p>
+                Found In Quraan Ayah(s): (55:27)(55 :78)
+              </div>
+
+              <div>
+                <h3> الْمُقْسِطُ
+                </h3>
+                <h4> 87. Al-Muqsit: The Just One</h4>
+                <p>The Equitable, The One who is Just in His judgment.</p>
+                <footer> Found In Quraan Ayah(s): (7:29)(3:1 8)</footer>
+              </div>
+
+              <div>
+                <h3> الْجَامِعُ
+                </h3>
+                <h4>88. Aj-Jami': The Assembler of Scattered Creations</h4>
+                <p>The Gatherer, The One who gathers the creatures on a day that there is no doubt about, that is the
+                  Day of Judgment.</p>
+                <footer> Found In Quraan Ayah(s): (3:9)</footer>
+              </div>
+
+              <div>
+                <h3> الْغَنِيُّ
+                </h3>
+                <h4>89. Al-Ghani: The Self- Sufficient One</h4>
+                <p>The One who does not need the creation.</p>
+                <footer> Found In Quraan Ayah(s): (3:97)(39: 7)(47:38)( 57:24)</footer>
+              </div>
+
+              <div>
+                <h3> الْمُغْنِي
+                </h3>
+                <h4>90. Al-Mughni: The Bestower of Sufficiency</h4>
+                <p> The Enricher, The One who satisfies the necessities of the creatures.</p>
+                <footer>Found In Quraan Ayah(s):(9:28)</footer>
+              </div>
+
+              <div>
+                <h3> اُلمَانِعُ
+                </h3>
+                <h4>91. Al-Mani': The Preventer</h4>
+                <p>The Withholder.</p>
+                <footer>Found In Quraan Ayah(s): (67:21)</footer>
+              </div>
+
+              <div>
+                <h3> الضَّارَّ
+                </h3>
+                <h4>92. Ad-Darr: The Distressor</h4>
+                <p>The One who makes harm reach to whoever He willed and benefit to whoever He willed.</p>
+                <footer>Found In Quraan Ayah(s): (6:17)</footer>
+              </div>
+
+              <div>
+                <h3> النَّافِعُ
+                </h3>
+                <h4> 93. An-Nafi': The Bestower of Benefits</h4>
+                <p> The Propitious, The One who makes harm reach to whoever He willed and benefit to whoever He willed.
+                </p>
+                <footer> Found In Quraan Ayah(s): (30:37)</footer>
+              </div>
+
+
+              <div>
+                <h3> النُّورُ
+                </h3>
+                <h4>94. An-Nur: The Prime Light</h4>
+                <p>The Light, The One who guides.</p>
+                <footer>Found In Quraan Ayah(s): (24:35)</footer>
+              </div>
+
+              <div>
+                <h3> الْھَادِي
+                </h3>
+                <h4>95. Al-Hadi: The Provider of Guidance</h4>
+                <p>The Guide, The One whom with His Guidance His belivers were guided, and with His Guidance the living
+                  beings have been guided to what is beneficial for them and protected from what is harmful to them.</p>
+                <footer> Found In Quraan Ayah(s): (25:31)</footer>
+              </div>
+
+
+              <div>
+                <h3> الْبَدِیعُ
+                </h3>
+                <h4>96. Al-Badi': The Unique One</h4>
+                <p> The Incomparable, The One who created the creation and formed it without any preceding example.</p>
+                <footer> Found In Quraan Ayah(s): (2:117)(6: 101)</footer>
+              </div>
+
+              <div>
+                <h3> الْبَاقِي
+                </h3>
+                <h4>97. Al-Baqi: The Ever Surviving One</h4>
+                <p>The Everlasting, The One that the state of non-existence is impossible for Him.</p>
+                <footer>Found In Quraan Ayah(s): (55:27)</footer>
+
+              </div>
+
+
+              <div>
+                <h3> الْوَارِثُ
+                </h3>
+                <h4>98. Al-Warith: The Eternal Inheritor</h4>
+                <p>The Heir, The One whose Existence remains.</p>
+                <footer>Found In Quraan Ayah(s): (15:23)</footer>
+              </div>
+
+              <div>
+                <h3>الرَّشِیدُ
+                </h3>
+                <h4>99. Ar-Rashid: The Guide to Path of Rectitude</h4>
+                <p>The Guide to the Right Path, The One who guides.
+                  Found In Quraan Ayah(s): (2:256)</p>
+              </div>
+              <div>
+                <h3> الصَّبُورُ
+                </h3>
+                <h4>100. As-Sabuur: The Extensively Enduring One</h4>
+                <p> The Patient, The One who does not quickly punish the sinners.</p>
+                <footer> Found In Quraan Ayah(s): (2:153) (3:200) (103:3)</footer>
+
+              </div>
+              <div>
+              </div>
+
             </div>
-          </li>
-          <li class="hajj_umrah extra-content">
-            <a href="#">Hajj and Umrah Guide</a>
-            <div class="content_box box4 ">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio
-                recusandae nisi nostrum provident quas ea cumque eius veritatis
-                dignissimos ut. Vitae deserunt facilis officiis pariatur totam
-                quo, error fugit nobis!
-              </p>
-            </div>
-          </li>
-          <li class="halal_res extra-content">
-            <a href="#">Halal Restaurant</a>
-            <div class="content_box box5">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio
-                recusandae nisi nostrum provident quas ea cumque eius veritatis
-                dignissimos ut. Vitae deserunt facilis officiis pariatur totam
-                quo, error fugit nobis!
-              </p>
-            </div>
-          </li>
-        </ul>
-      </div>
-      <div id="prayerDiv" class="active">
-        <div id="contol-div">
-          <div class="close"><ion-icon name="close"></ion-icon></div>
-          <div class="minimise"><ion-icon name="remove"></ion-icon></div>
-        </div>
-        <ul>
-          <li class="prayer_list_item">
-            <span class="prayer_name">
-              Fajr
-            </span>
-            <span class="prayer_time" id="fajr">
-              5:30am
-            </span>
-          </li>
-          <!-- <li class="prayer_list_item" id="fajr">Prayer Time</li> -->
-          <li class="prayer_list_item" >
-              <span class="prayer_name">
-                  Sunrise
-                </span>
-                <span class="prayer_time" id="sunrise">
-                  5:30am
-                </span>
-          </li>
-          <li class="prayer_list_item">
-              <span class="prayer_name">
-                  Zuhr
-                </span>
-                <span class="prayer_time" id="zuhr">
-                  5:30am
-                </span>
-          </li>
-          <li class="prayer_list_item">
-              <span class="prayer_name">
-                 Asr
-                </span>
-                <span class="prayer_time"  id="asr">
-                  5:30am
-                </span>
-          </li>
-          <li class="prayer_list_item" >
-              <span class="prayer_name">
-                  Maghrib
-                 </span>
-                 <span class="prayer_time" id="magrib">
-                   5:30am
-                 </span>
-          </li>
-          <li class="prayer_list_item" >
-              <span class="prayer_name">
-                  Ishai
-                 </span>
-                 <span class="prayer_time" id="ishai">
-                   5:30am
-                 </span>
-          </li>
-        </ul>
-      </div>
-      <select id="chapter">
-        <!-- <option id="chapter_value">select chapter </option> -->
-      </select>
-      <select id="verse">
-        <option>select verse </option>
-      </select>
-      <div class="result"></div>
+          </div>
+        </li>
+        <li class="hajj_umrah extra-content">
+          <a href="#">Hajj and Umrah Guide</a>
+          <div class="content_box box4 ">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio
+              recusandae nisi nostrum provident quas ea cumque eius veritatis
+              dignissimos ut. Vitae deserunt facilis officiis pariatur totam
+              quo, error fugit nobis!
+            </p>
+          </div>
+        </li>
+        <li class="halal_res extra-content">
+          <a href="#">Halal Restaurant</a>
+          <div class="content_box box5">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio
+              recusandae nisi nostrum provident quas ea cumque eius veritatis
+              dignissimos ut. Vitae deserunt facilis officiis pariatur totam
+              quo, error fugit nobis!
+            </p>
+          </div>
+        </li>
+      </ul>
     </div>
-    <script  src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"></script> 
-    <script src="API.js"></script>
-    <script src="UI.js"></script>
-    <script src="Storage.js"></script>
-    <script src="app.js"></script>
-  </body>
+    <div id="prayerDiv" class="active">
+      <div id="contol-div">
+        <div class="close">
+          <ion-icon name="close"></ion-icon>
+        </div>
+        <div class="minimise">
+          <ion-icon name="remove"></ion-icon>
+        </div>
+      </div>
+      <ul>
+        <li class="prayer_list_item">
+          <span class="prayer_name">
+            Fajr
+          </span>
+          <span class="prayer_time" id="fajr">
+            5:30am
+          </span>
+        </li>
+        <!-- <li class="prayer_list_item" id="fajr">Prayer Time</li> -->
+        <li class="prayer_list_item">
+          <span class="prayer_name">
+            Sunrise
+          </span>
+          <span class="prayer_time" id="sunrise">
+            5:30am
+          </span>
+        </li>
+        <li class="prayer_list_item">
+          <span class="prayer_name">
+            Zuhr
+          </span>
+          <span class="prayer_time" id="zuhr">
+            5:30am
+          </span>
+        </li>
+        <li class="prayer_list_item">
+          <span class="prayer_name">
+            Asr
+          </span>
+          <span class="prayer_time" id="asr">
+            5:30am
+          </span>
+        </li>
+        <li class="prayer_list_item">
+          <span class="prayer_name">
+            Maghrib
+          </span>
+          <span class="prayer_time" id="magrib">
+            5:30am
+          </span>
+        </li>
+        <li class="prayer_list_item">
+          <span class="prayer_name">
+            Ishai
+          </span>
+          <span class="prayer_time" id="ishai">
+            5:30am
+          </span>
+        </li>
+      </ul>
+    </div>
+    <select id="chapter">
+      <!-- <option id="chapter_value">select chapter </option> -->
+    </select>
+    <select id="verse">
+      <option>select verse </option>
+    </select>
+    <div class="result"></div>
+  </div>
+  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"></script>
+  <script src="API.js"></script>
+  <script src="UI.js"></script>
+  <script src="Storage.js"></script>
+  <script src="app.js"></script>
+</body>
+
 </html>

@@ -69,7 +69,7 @@ function getTime() {
     "Dec"
   ];
   //SET WEEK
-  const weekDays = ["Sun ", "Mon ", "Tue ", "Wed ", "Thur ", "Fri ", "Sa "];
+  const weekDays = ["Sun ", "Mon ", "Tue ", "Wed ", "Thur ", "Fri ", "Sat "];
 
   let day = document.getElementById("day"),
     monthSpan = document.getElementById("monthSpan"),
