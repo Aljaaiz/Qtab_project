@@ -11,7 +11,8 @@ ui.miniseElement();
 //function to expand search icon
 // ui.expandSearhInput();
 
-api.getQuran().then(data => {
+api.fetchQuran().then(data => {
+  console.log(data)
   ui.paint(data);
 });
 

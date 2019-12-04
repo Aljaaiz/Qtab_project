@@ -92,11 +92,26 @@ body {
   margin-right: 5px;
   cursor: pointer;
   align-self: center;
+  
+}
+
+
+@font-face {
+  font-family: 'kfgqpc_uthmanic_script_hafsRg';
+  src: url('./fonts/uthmanic-webfont.woff2') format('woff2'),
+       url('./fonts/uthmanic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
 }
 #qtext {
+  /* font-family:  Scheherazade,'kfgqpc_uthmanic_script_hafsRg', serif; */
   font-family: Scheherazade, serif;
-  direction: rtl;
+  /* direction: rtl; */
   font-size: 2.7rem;
+  /* word-spacing: 1rem; */
+  /* unicode-bidi:bidi-override !important; */
+
 }
 #q-meaning {
   font-size: 1.2rem;
@@ -281,7 +296,8 @@ li .morning_dua {
   background: olivedrab;
 }
 .box3 {
-  background: var(--orange-red);
+  background: white;
+  color:#555;
 }
 .box1 {
   background: var(--orange-red);
@@ -374,13 +390,23 @@ li .morning_dua {
   grid-template-rows: minmax(100px, auto);
   grid-gap: 1rem;
 }
+#names_div > div{
+  padding:5px 15px;
+  transition:all  .3s ease-in-out;
+}
+#names_div > div:hover{
+  -webkit-box-shadow: 0px 0px 6px 2px rgba(0,0,0,0.301);
+-moz-box-shadow: 0px 0px 6px 2px rgba(0,0,0,0.301);
+box-shadow: 0px 0px 6px 2px rgba(0, 0, 0, 0.301);
+transform:translateY(5px);
+}
 #names_div h3 {
   font-size: 2.5rem;
   font-family: Scheherazade, serif;
 }
 #names_div h4 {
   text-align: start;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: bold;
   margin: 5px;
 }

@@ -19,7 +19,7 @@ class UI {
 
   displayExtraLisContent() {
     this.extra_lis.forEach(item => {
-      item.addEventListener("click", function(e) {
+      item.addEventListener("click", function (e) {
         if (e.target.classList.contains("extra-content")) {
           console.log("yes");
           e.target.children[1].classList.toggle("active");
@@ -59,12 +59,9 @@ class UI {
   // }
 
   paint(data) {
-    let output = `<option value="0">select surah</option>`;
-    data.forEach(data => {
-      output += `<option value="${data.id}">${data.name_simple}</option>`;
-    });
-    this.chapter_id.innerHTML = output;
-    console.log(data);
+    document.querySelector("#qtext").innerHTML = data.Text;
+    document.querySelector("#chapter").innerHTML = data.Chapter;
+    document.querySelector("#c_name").innerHTML = data.Id;
   }
 
   //Solat into the UI

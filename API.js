@@ -37,6 +37,17 @@ class API {
     return { prayerData, weatherRes };
   }
 
+  //QUR'AN FETCH
+  async fetchQuran() {
+    const response = await fetch(`http://quranapi.azurewebsites.net/api/verse/1`)
+    const quranRes = await response.json()
+    console.log(quranRes);
+
+    return quranRes
+  }
+
+
+
   //   //Function to fecth Weather
   //   async searchWeather(city) {
   //     const response = await fetch(
