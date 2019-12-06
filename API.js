@@ -37,13 +37,18 @@ class API {
     return { prayerData, weatherRes };
   }
 
+
+
   //QUR'AN FETCH
   async fetchQuran() {
-    const response = await fetch(`http://quranapi.azurewebsites.net/api/verse/1`)
+    let randomNum = Math.floor(Math.random() * 6236)
+    // const response = await fetch(`http://quranapi.azurewebsites.net/api/verse/1`)
+    const response = await fetch(`https://api.alquran.cloud/v1/ayah/${randomNum}/editions/quran-uthmani,en.asad`)
+    // http://api.alquran.cloud/v1/ayah/262/editions/quran-uthmani,en.asad
     const quranRes = await response.json()
     console.log(quranRes);
 
-    return quranRes
+    return quranRes.data
   }
 
 

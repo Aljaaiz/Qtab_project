@@ -17,7 +17,7 @@ api.fetchQuran().then(data => {
 });
 
 api.getPrayerTime().then(data => {
-  console.log(data.prayerData);
+  // console.log(data.prayerData);
   // console.log(data.weatherRes);
   ui.paintSolatTime(data.prayerData);
   ui.paintWeather(data.weatherRes);

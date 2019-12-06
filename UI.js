@@ -59,21 +59,24 @@ class UI {
   // }
 
   paint(data) {
-    document.querySelector("#qtext").innerHTML = data.Text;
-    document.querySelector("#chapter").innerHTML = data.Chapter;
-    document.querySelector("#c_name").innerHTML = data.Id;
+
+
+    document.querySelector("#qtext").innerHTML = data[0].text;
+    document.getElementById("q-meaning").innerHTML = data[1].text;
+    document.getElementById("q-chapter").innerHTML = `Q ${data[0].surah.number}vs ${data[0].numberInSurah}`;
+
   }
 
   //Solat into the UI
   paintSolatTime(data) {
-    console.log(data);
+    // console.log(data);
 
     const {
       timings
       // date: { hijri }
     } = data.data;
 
-    console.log(timings);
+    // console.log(timings);
     this.fajr.innerHTML = timings.Fajr + " am";
     this.sunrise.innerHTML = timings.Sunrise + " am";
     this.zuhr.innerHTML = timings.Dhuhr + " pm";
@@ -83,7 +86,7 @@ class UI {
   }
 
   paintWeather(data) {
-    console.log(data);
+    // console.log(data);
     const {
       main: { temp },
       name,
@@ -95,6 +98,6 @@ class UI {
     this.location.innerHTML = name;
     this.w_icon.innerHTML = `<img src="http://openweathermap.org/img/w/${icon}.png" >`;
 
-    console.log(temp.toFixed(), name, icon);
+    // console.log(temp.toFixed(), name, icon);
   }
 }
