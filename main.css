@@ -4,6 +4,20 @@
   --orange-red:blue;
   
 }
+@font-face {
+  font-family: 'me_quran';
+  src: url('/fonts/me_quran_2.eot'); /* IE9 Compat Modes */
+  src: url('/fonts/me_quran_2.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/fonts/me_quran_2.woff2') format('woff2'), /* Super Modern Browsers */
+       url('/fonts/me_quran_2.woff') format('woff'), /* Pretty Modern Browsers */
+       url('/fonts/me_quran_2.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('/fonts/me_quran_2.svg') format('svg'); /* Legacy iOS */
+}
+@font-face {
+  font-family: 'Uthmanic';
+  src: url('/Uthmanic.otf') format('otf'),
+}
+
 *,
 ::after,
 ::before {
@@ -98,30 +112,22 @@ body {
 }
 
 
-@font-face {
-  font-family: 'kfgqpc_uthmanic_script_hafsRg';
-  src: url('./fonts/uthmanic-webfont.woff2') format('woff2'),
-       url('./fonts/uthmanic-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-
-}
 #qtext {
-  /* font-family:  Scheherazade,'kfgqpc_uthmanic_script_hafsRg', serif; */
-  font-family: Scheherazade, serif;
-  /* direction: rtl; */
-  font-size: 2.7rem;
-  /* word-spacing: 1rem; */
-  /* unicode-bidi:bidi-override !important; */
+  line-height:70px;
+  font-family:'me_quran', 'Uthmanic',serif;
+  font-size:1.8rem;
+  margin: 15px;
+  word-spacing: .6rem;
 
 }
 #q-meaning {
+  line-height:1.6rem;
   font-size: 1.2rem;
   font-weight: 400;
 }
 #qdiv {
   /* height: 50vh; */
-  padding: 20px 40px;
+  padding: 40px 40px;
   min-width: 400;
   max-width: calc(100vw - 300px);
   overflow: auto;
@@ -298,9 +304,11 @@ li .morning_dua {
   background: olivedrab;
 }
 .box3 {
+  
   background: white;
   color:#555;
 }
+
 .box1 {
   background: var(--orange-red);
 }
@@ -391,9 +399,10 @@ li .morning_dua {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: minmax(100px, auto);
   grid-gap: 1rem;
+  margin-top: 40px;
 }
 #names_div > div{
-  padding:5px 15px;
+  padding:5px 25px;
   transition:all  .3s ease-in-out;
 }
 #names_div > div:hover{
@@ -402,6 +411,7 @@ li .morning_dua {
 box-shadow: 0px 0px 6px 2px rgba(0, 0, 0, 0.301);
 transform:translateY(5px);
 }
+
 #names_div h3 {
   font-size: 2.5rem;
   font-family: Scheherazade, serif;

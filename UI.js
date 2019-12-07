@@ -63,7 +63,7 @@ class UI {
 
     document.querySelector("#qtext").innerHTML = data[0].text;
     document.getElementById("q-meaning").innerHTML = data[1].text;
-    document.getElementById("q-chapter").innerHTML = `Q ${data[0].surah.number}vs ${data[0].numberInSurah}`;
+    document.getElementById("q-chapter").innerHTML = `Q ${data[0].surah.number} vs ${data[0].numberInSurah}`;
 
   }
 
